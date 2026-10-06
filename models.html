@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models | Hominy House</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span>Hominy House</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="margin-top: 80px;">
+        <div class="section-title">
+            <p>The Collection</p>
+            <h2>Our Models</h2>
+        </div>
+
+        <div class="grid" id="modelGrid">
+            <!-- Models will be populated here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hominy House. Handcrafted with passion.</p>
+    </footer>
+
+    <script>
+        const images = [
+            '1743095627140.jpg', '1743095654488.jpg', '1743095687840.jpg', 
+            '1743095783270.jpg', '1743095897658.jpg', '1743095929824.jpg', 
+            '1765590493117.jpg', '1765638091473.jpg', '1765638102268.jpg', 
+            '1765638139625.jpg', '1767631023478.jpg', '1767661383485.jpg', 
+            '1768006328727.jpg', '20240412_175709~2.jpg', 
+            'IMG_20240111_113218628.jpg', 'IMG_20240130_134804318.jpg'
+        ];
+
+        const grid = document.getElementById('modelGrid');
+        const basePath = './images/';
+
+        images.forEach((img, index) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${basePath}${img}" alt="Knife Model ${index + 1}">
+                <div class="card-content">
+                    <h3>Model ${index + 1}</h3>
+                    <p>Signature Series</p>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>
