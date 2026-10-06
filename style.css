@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
-    --bg-color: #0a0a0c;
+    --bg-color: #000000;
     --surface-color: rgba(255, 255, 255, 0.03);
     --border-color: rgba(255, 255, 255, 0.1);
     --text-primary: #ffffff;
@@ -40,8 +40,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background: rgba(10, 10, 12, 0.8);
+    padding: 2.5rem 5%;
+    background: #000000;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -49,28 +49,35 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 1.4rem;
+    gap: 16px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.5px;
     color: var(--text-primary);
 }
 
 .logo img {
-    height: 32px;
+    height: 60px;
     width: auto;
+}
+
+.main-logo {
+    height: 1200px; /* 5x larger than before */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 3.5rem;
+    align-items: center;
 }
 
 .nav-links a {
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
+    letter-spacing: 2px;
+    font-weight: 600;
     color: var(--text-secondary);
     transition: var(--transition);
 }
@@ -79,23 +86,47 @@ nav {
     color: var(--accent-color);
 }
 
+.nav-icon {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
 /* --- Hero Section --- */
 .hero {
-    height: 100vh;
+    height: 65vh;
+    margin-top: 1250px; /* Matches expanded header height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns text higher inside hero */
     align-items: center;
     text-align: center;
-    padding: 0 5%;
+    padding-top: 3rem; /* Moves text content towards top of hero */
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 0%, 
+        rgba(10, 10, 12, 0.7) 15%, 
+        rgba(10, 10, 12, 0.7) 85%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url('./images/1743095627140.jpg') center/cover no-repeat;
+    
+    /* Smooth edge blending mask */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+.hero-content {
+    max-width: 800px;
 }
 
 .hero h1 {
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 700;
     letter-spacing: -2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     background: linear-gradient(to bottom, #fff 40%, #666 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -105,7 +136,7 @@ nav {
     font-size: 1.2rem;
     color: var(--text-secondary);
     max-width: 600px;
-    margin-bottom: 2.5rem;
+    margin: 0 auto 2rem auto;
 }
 
 .btn {
@@ -128,7 +159,7 @@ nav {
 
 /* --- Section Layouts --- */
 section {
-    padding: 8rem 5%;
+    padding: 2rem 5% 5rem 5%;
 }
 
 .container {
@@ -138,7 +169,7 @@ section {
 
 .section-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-title h2 {
@@ -179,6 +210,7 @@ section {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .card-content {

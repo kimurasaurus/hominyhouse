@@ -1,187 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Blade Laboratory - Master Handcrafted Cutlery</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      background-color: #0b0b0b;
-    }
-
-    .bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.4;
-      transform: scale(1.25);
-    }
-
-    header {
-      position: relative;
-      z-index: 10;
-      background: #000000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
-
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .logo-link {
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .brand-title {
-      font-family: serif;
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: #dfba7c;
-      text-transform: uppercase;
-    }
-
-    .location-text {
-      font-size: 0.55rem;
-      color: #777;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-top: -2px;
-    }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    nav {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover, nav a.active {
-      color: #d4af37;
-    }
-
-    .header-hero {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid #d4af37;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      z-index: 10;
-      padding: 3rem 1.5rem;
-    }
-
-    .content-card {
-      background: rgba(15, 15, 15, 0.85);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: 20px;
-      padding: 3.5rem 3.5rem;
-      max-width: 650px;
-      width: 100%;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-      color: #ffffff;
-      text-align: center;
-    }
-
-    .content-card h1 {
-      margin-top: 0;
-      margin-bottom: 1rem;
-      color: #d4af37;
-      font-size: 2.2rem;
-    }
-
-    .content-card p {
-      color: #cccccc;
-      margin-bottom: 2rem;
-      text-align: justify;
-      line-height: 1.6;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 0.85rem 2.5rem;
-      background: linear-gradient(135deg, #dfba7c 0%, #aa7c11 100%);
-      color: #000;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      border-radius: 30px;
-      box-shadow: 0 4px 15px rgba(223, 186, 124, 0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(223, 186, 124, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hominy House</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .nav-links a {
+            text-decoration: none !important;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+        .nav-links a:hover {
+            color: var(--accent-color, #00d4ff) !important;
+            text-shadow: 0 0 8px #00d4ff, 0 0 16px #00d4ff, 0 0 24px #00d4ff;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
 
-  <video autoplay loop muted playsinline class="bg-video" src="images/hero-blade.mp4"></video>
+    <nav style="overflow: visible;">
+        <a href="index.html" class="logo" style="overflow: visible;">
+            <img src="./images/hominyhouse.jpg" alt="Hominy House Logo" class="main-logo" style="transform: scale(2); transform-origin: left center; opacity: 0.65;">
+        </a>
+        <ul class="nav-links" style="list-style: none; padding: 0; margin: 0;">
+            <li><a href="index.html" style="font-size: 1rem;">Home</a></li>
+            <li><a href="models.html" style="font-size: 1rem;">Models</a></li>
+            <li><a href="story.html" style="font-size: 1rem;">Story</a></li>
+            <li><a href="contact.html" style="font-size: 1rem;">Contact</a></li>
+            <li><img src="./images/startrek.gif" alt="Star Trek" class="nav-icon" style="height: 60px;"></li>
+        </ul>
+    </nav>
 
-  <header>
-    <div class="logo-container">
-      <a href="index.html" class="logo-link">
-        <span class="brand-title">Blade Laboratory</span>
-      </a>
-      <span class="location-text">Forged in Tampa, Florida</span>
-    </div>
+    <header class="hero" style="justify-content: center; align-items: center; padding-top: 0; margin-top: 140px; background: linear-gradient(rgba(10, 10, 12, 0.7), rgba(10, 10, 12, 0.7)), url('./images/1743095627140.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Hominy House</h1>
+            <p>Artisan blades designed for the modern explorer.</p>
+            <a href="models.html" class="btn">Explore Collection</a>
+        </div>
+    </header>
 
-    <div class="header-right">
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="what-we-do.html">Our Craft</a>
-        <a href="tips.html">Care & Maintenance</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-      <a href="https://www.linkedin.com/" target="_blank">
-        <img src="images/hero.jpg" alt="Master Blacksmith" class="header-hero">
-      </a>
-    </div>
-  </header>
+    <section class="container" style="margin-top: 40px;">
+        <div class="section-title">
+            <p>The Essence</p>
+            <h2>Masterful Craftsmanship</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="./images/1743095654488.jpg" alt="Knife Detail">
+                <div class="card-content">
+                    <h3>The Edge</h3>
+                    <p>Precision Engineering</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/1743095687840.jpg" alt="Knife Detail">
+                <div class="card-content">
+                    <h3>The Soul</h3>
+                    <p>Handcrafted Heritage</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <main>
-    <div class="content-card">
-      <h1>Precision Knives Forged for Mastery</h1>
-      <p>Blade Laboratory engineers high-performance culinary and custom blades crafted from Japanese Damascus and high-carbon steel. Designed for professional chefs and culinary purists, every edge is hand-honed to surgical accuracy for flawless performance in every slice.</p>
-      <a href="what-we-do.html" class="cta-button">Explore the Collection</a>
-    </div>
-  </main>
+    <footer>
+        <p>&copy; 2024 Hominy House. Handcrafted with passion.</p>
+    </footer>
 
 </body>
 </html>
