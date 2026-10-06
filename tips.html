@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blade Laboratory - Master Handcrafted Cutlery</title>
+  <title>Blade Laboratory - Care & Maintenance</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
@@ -114,45 +114,36 @@
       width: 100%;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
       color: #ffffff;
-      text-align: center;
     }
 
-    .content-card h1 {
+    .content-card h2 {
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       color: #d4af37;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
 
-    .content-card p {
+    .tip-box {
+      margin-bottom: 1.2rem;
+    }
+
+    .tip-title {
+      color: #dfba7c;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+
+    .tip-text {
       color: #cccccc;
-      margin-bottom: 2rem;
       text-align: justify;
-      line-height: 1.6;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 0.85rem 2.5rem;
-      background: linear-gradient(135deg, #dfba7c 0%, #aa7c11 100%);
-      color: #000;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      border-radius: 30px;
-      box-shadow: 0 4px 15px rgba(223, 186, 124, 0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(223, 186, 124, 0.5);
+      line-height: 1.5;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
 
-  <video autoplay loop muted playsinline class="bg-video" src="images/hero-blade.mp4"></video>
+  <video autoplay loop muted playsinline class="bg-video" src="images/whetstone.mp4"></video>
 
   <header>
     <div class="logo-container">
@@ -164,9 +155,9 @@
 
     <div class="header-right">
       <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="what-we-do.html">Our Craft</a>
-        <a href="tips.html">Care & Maintenance</a>
+        <a href="tips.html" class="active">Care & Maintenance</a>
         <a href="contact.html">Contact Us</a>
       </nav>
       <a href="https://www.linkedin.com/" target="_blank">
@@ -177,9 +168,22 @@
 
   <main>
     <div class="content-card">
-      <h1>Precision Knives Forged for Mastery</h1>
-      <p>Blade Laboratory engineers high-performance culinary and custom blades crafted from Japanese Damascus and high-carbon steel. Designed for professional chefs and culinary purists, every edge is hand-honed to surgical accuracy for flawless performance in every slice.</p>
-      <a href="what-we-do.html" class="cta-button">Explore the Collection</a>
+      <h2>Care & Maintenance</h2>
+
+      <div class="tip-box">
+        <div class="tip-title">1. Always Hand Wash & Dry Immediately</div>
+        <div class="tip-text">Never place high-carbon or Damascus steel knives in a dishwasher. Wash gently with warm soapy water and dry completely with a soft cloth to prevent patina or oxidation.</div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">2. Sharpening via Water Whetstones</div>
+        <div class="tip-text">Maintain your blade using 1000/6000 grit Japanese whetstones. Avoid pull-through carbide sharpeners, which ruin edge geometry and remove excessive steel.</div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">3. Proper Cutting Board Surface</div>
+        <div class="tip-text">Always use end-grain wood or soft plastic cutting boards. Hard surfaces like glass, marble, or ceramic will instantly dull and chip fine edges.</div>
+      </div>
     </div>
   </main>
 
