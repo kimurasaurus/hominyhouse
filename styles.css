@@ -11,21 +11,24 @@
   --accent: #c9703a;
   --radius: 14px;
   --max: 1120px;
-  --font: "Megunso", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Megunso", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-banner: "Megunso", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font: "Caviar Dreams", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Caviar Dreams", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-banner: "Caviar Dreams", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* ————— Megunso (site banner font) —————
-   Drop the Megunso font files from
-   https://www.fontspace.com/megunso-font-f120044
-   into the "fonts" folder to enable. Falls back
-   gracefully to Inter Tight if the files are absent. */
+/* ————— Caviar Dreams Bold Italic (wordmark only) ————— */
 @font-face {
-  font-family: "Megunso";
-  src: url("fonts/MegunsoDemoVersion-j9WD7.otf") format("opentype"),
-       url("fonts/Megunso-Regular.woff2") format("woff2"),
-       url("fonts/Megunso-Regular.ttf") format("truetype");
+  font-family: "Caviar Dreams";
+  src: url("fonts/CaviarDreams_BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ————— Caviar Dreams (site font) ————— */
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("fonts/CaviarDreams.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -80,9 +83,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .wordmark {
-  font-family: var(--font-banner);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: "Caviar Dreams", var(--font-banner);
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-style: italic;
   letter-spacing: 0.01em;
 }
 
@@ -314,62 +318,17 @@ a { color: inherit; text-decoration: none; }
 
 /* ————— Conversation ————— */
 
-.prompt {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 44px;
-  background: var(--card);
+.about-text {
+  text-align: center;
 }
 
-.prompt-q {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-bottom: 24px;
+.about-text p {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
 }
 
-.prompt-form {
-  display: flex;
-  gap: 12px;
-}
-
-.prompt-form input {
-  flex: 1;
-  font: inherit;
-  font-size: 1rem;
-  color: var(--ink);
-  background: #161616;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 15px 18px;
-  outline: none;
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.prompt-form input::placeholder { color: var(--muted); }
-
-.prompt-form input:focus {
-  border-color: var(--accent);
-  background: #1a1a1a;
-}
-
-.prompt-form button {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 400;
-  color: #000;
-  background: var(--ink);
-  border: none;
-  border-radius: 10px;
-  padding: 15px 28px;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.prompt-form button:hover { background: var(--accent); color: #fff; }
-
-.prompt-form button:active { transform: scale(0.97); }
+.about-text p:last-child { margin-bottom: 0; }
 
 /* ————— Footer ————— */
 
