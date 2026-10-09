@@ -1,7 +1,15 @@
 /* ============================================================
-   Hominy House — Stoner Rock & Doom Metal
+   Hominy House - Stoner Rock & Doom Metal
    Single stylesheet. Dark, minimal, heavy.
    ============================================================ */
+
+@font-face {
+  font-family: "HemiHead";
+  src: url("fonts/HemiHead-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
 
 :root {
   --bg:          #07070a;
@@ -15,6 +23,8 @@
   --accent-soft: rgba(255, 90, 31, 0.14);
   --radius:      18px;
   --maxw:        1180px;
+  --banner-h:    77px;
+  --marquee-h:   40px;
   --ease:        cubic-bezier(0.22, 1, 0.36, 1);
   --font-display:"Space Grotesk", system-ui, sans-serif;
   --font-body:   "Inter", system-ui, sans-serif;
@@ -29,6 +39,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-height: 100vh;
+  padding-top: var(--banner-h);
   font-family: var(--font-body);
   color: var(--text);
   background-color: var(--bg);
@@ -98,24 +109,34 @@ img { display: block; max-width: 100%; }
   height: 48px;
   max-width: 100%;
   object-fit: contain;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.5),
-              0 0 26px rgba(255, 90, 31, 0.25);
-  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  filter: drop-shadow(0 0 14px rgba(255, 90, 31, 0.35));
+  transition: transform 0.5s var(--ease), filter 0.5s var(--ease);
 }
 .brand:hover .brand__logo {
   transform: rotate(-4deg) scale(1.06);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.5),
-              0 0 40px rgba(255, 90, 31, 0.55);
+  filter: drop-shadow(0 0 22px rgba(255, 90, 31, 0.75));
 }
 
 .brand__name {
-  font-family: var(--font-display);
+  font-family: "HemiHead", var(--font-display), system-ui, sans-serif;
   font-weight: 700;
-  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
-  letter-spacing: -0.02em;
+  font-style: italic;
+  font-size: clamp(1.45rem, 3vw, 1.95rem);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   white-space: nowrap;
+  color: #fdf8f0;
+  text-shadow: 0 0 10px rgba(255, 176, 32, 0.45), 0 0 24px rgba(255, 90, 31, 0.3);
+  animation: brandShimmer 4.5s ease-in-out infinite;
+}
+
+@keyframes brandShimmer {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255, 176, 32, 0.3), 0 0 20px rgba(255, 90, 31, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(255, 176, 32, 0.75), 0 0 34px rgba(255, 90, 31, 0.5);
+  }
 }
 
 .nav {
@@ -147,15 +168,17 @@ img { display: block; max-width: 100%; }
 .nav__link:hover::after { transform: scaleX(1); }
 
 .nav__link--cta {
-  color: var(--text);
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: rgba(244, 242, 238, 0.82);
+  background: linear-gradient(135deg, rgba(255, 90, 31, 0.62), rgba(255, 176, 32, 0.58));
   font-weight: 600;
-  box-shadow: 0 6px 20px rgba(255, 90, 31, 0.28);
+  border: 1px solid rgba(255, 90, 31, 0.28);
+  box-shadow: none;
 }
 .nav__link--cta::after { display: none; }
 .nav__link--cta:hover {
-  filter: brightness(1.08);
-  box-shadow: 0 8px 30px rgba(255, 90, 31, 0.5);
+  background: linear-gradient(135deg, rgba(255, 90, 31, 0.82), rgba(255, 176, 32, 0.78));
+  border-color: rgba(255, 90, 31, 0.45);
+  color: var(--text);
   transform: translateY(-1px);
 }
 
@@ -185,7 +208,10 @@ img { display: block; max-width: 100%; }
    Layout helpers
    ============================================================ */
 
-main { position: relative; z-index: 1; }
+main {
+  position: relative;
+  z-index: 1;
+}
 
 .section {
   max-width: var(--maxw);
@@ -214,13 +240,13 @@ main { position: relative; z-index: 1; }
 
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - var(--banner-h) - var(--marquee-h));
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 140px clamp(20px, 5vw, 44px) 90px;
+  padding: clamp(40px, 8vh, 90px) clamp(20px, 5vw, 44px) 90px;
 }
 
 .hero__inner { max-width: 780px; }
@@ -299,68 +325,39 @@ main { position: relative; z-index: 1; }
   background: rgba(255,255,255,0.07);
 }
 
-.hero__scroll {
-  position: absolute;
-  bottom: 34px;
-  left: clamp(20px, 5vw, 44px);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.hero__scroll-line {
-  width: 54px;
-  height: 1px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-  position: relative;
-  overflow: hidden;
-}
-.hero__scroll-line::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--accent-2);
-  animation: slide 2.2s var(--ease) infinite;
-}
-@keyframes slide {
-  0%   { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-.hero__scroll-label {
-  font-family: var(--font-display);
-  font-size: 0.72rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-}
-
 /* ============================================================
    Marquee
    ============================================================ */
 
 .marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--marquee-h);
   overflow: hidden;
-  border-top: 1px solid var(--panel-line);
+  padding: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 14, 0.92) 0%, rgba(10, 10, 14, 0.5) 100%);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--panel-line);
-  background: rgba(8, 8, 11, 0.5);
-  backdrop-filter: blur(10px);
-  padding: 16px 0;
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.4);
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
 }
 .marquee__track {
+  flex: none;
   display: inline-flex;
-  gap: 26px;
+  gap: 18px;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 34s linear infinite;
+  animation: marquee 90s linear infinite;
 }
 .marquee__track span {
   font-family: var(--font-display);
-  font-size: clamp(0.9rem, 1.8vw, 1.15rem);
+  font-size: clamp(0.72rem, 1.35vw, 0.9rem);
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   color: var(--text-dim);
-  text-transform: uppercase;
 }
 .marquee__track span:nth-child(even) { color: var(--accent); }
 @keyframes marquee {
@@ -579,6 +576,63 @@ main { position: relative; z-index: 1; }
 }
 
 /* ============================================================
+   Release Radar (scrollable window)
+   ============================================================ */
+
+.releases {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid var(--panel-line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 90, 31, 0.5) transparent;
+  mask-image: linear-gradient(180deg, #000 0%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 92%, transparent 100%);
+}
+.releases::-webkit-scrollbar { width: 8px; }
+.releases::-webkit-scrollbar-track { background: transparent; }
+.releases::-webkit-scrollbar-thumb {
+  background: rgba(255, 90, 31, 0.4);
+  border-radius: 8px;
+}
+.releases::-webkit-scrollbar-thumb:hover { background: rgba(255, 90, 31, 0.7); }
+
+.releases__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: background 0.25s var(--ease);
+}
+.releases__item:hover { background: rgba(255,255,255,0.045); }
+
+.releases__album {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.releases__band {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+.releases__year {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+}
+
+/* ============================================================
    Subscribe
    ============================================================ */
 
@@ -667,14 +721,14 @@ main { position: relative; z-index: 1; }
   gap: 10px;
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .footer__logo {
   width: auto;
   height: 34px;
   object-fit: contain;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.12);
+  filter: drop-shadow(0 0 8px rgba(255, 90, 31, 0.3));
 }
 .footer__copy {
   color: var(--text-dim);
@@ -714,7 +768,7 @@ main { position: relative; z-index: 1; }
 @media (max-width: 760px) {
   .nav {
     position: fixed;
-    inset: 74px 14px auto 14px;
+    inset: calc(var(--banner-h) + 12px) 14px auto 14px;
     flex-direction: column;
     align-items: stretch;
     gap: 4px;
