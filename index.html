@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hominy House</title>
+  <meta name="description" content="Hominy House — a place for stories, news, and conversation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img class="logo" src="images/HH_Logo.png" alt="Hominy House logo" />
+        <span class="wordmark">Hominy House</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#stories">Stories</a>
+        <a href="#news">News</a>
+        <a href="#conversation">Conversation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-media">
+        <img src="images/hominy-hero.png" alt="Hominy House" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">A place for stories, news &amp; conversation</p>
+        <h1>Hominy House</h1>
+        <p class="hero-sub">Where good words gather.</p>
+      </div>
+    </section>
+
+    <section id="stories" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Stories</h2>
+          <a class="more" href="#stories">View all →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="tag">Featured</span>
+            <h3><a href="#">The First Batch</a></h3>
+            <p>How everything began — a small kitchen, a big idea, and a community that slowly came together.</p>
+            <time datetime="2026-10-08">October 8, 2026</time>
+          </article>
+          <article class="card">
+            <span class="tag">Essay</span>
+            <h3><a href="#">Notes on Gathering</a></h3>
+            <p>Why the best conversations happen around a table, and what we lose when we stop sitting down together.</p>
+            <time datetime="2026-10-01">October 1, 2026</time>
+          </article>
+          <article class="card">
+            <span class="tag">Profile</span>
+            <h3><a href="#">The People of the House</a></h3>
+            <p>Meet the regulars, the newcomers, and everyone in between who makes Hominy House home.</p>
+            <time datetime="2026-09-24">September 24, 2026</time>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>News</h2>
+          <a class="more" href="#news">View all →</a>
+        </div>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-10-07">Oct 7</time>
+            <a href="#">Hominy House opens its doors to the public</a>
+          </li>
+          <li>
+            <time datetime="2026-10-03">Oct 3</time>
+            <a href="#">Weekly conversation series announced for October</a>
+          </li>
+          <li>
+            <time datetime="2026-09-28">Sep 28</time>
+            <a href="#">New story submissions now open</a>
+          </li>
+          <li>
+            <time datetime="2026-09-20">Sep 20</time>
+            <a href="#">Behind the scenes: how the house gets its name</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="conversation" class="section">
+      <div class="container narrow">
+        <div class="section-head center">
+          <h2>Conversation</h2>
+          <p class="section-sub">Pull up a chair. Every voice belongs at this table.</p>
+        </div>
+        <div class="prompt">
+          <p class="prompt-q">What story should we tell next?</p>
+          <form class="prompt-form" action="#" method="post">
+            <input type="text" placeholder="Share a thought, a memory, a question…" aria-label="Share a thought" />
+            <button type="submit">Join in</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="wordmark small">Hominy House</p>
+      <p class="fine">Stories · News · Conversation</p>
+      <p class="fine muted">© 2026 Hominy House</p>
+    </div>
+  </footer>
+
+</body>
+</html>

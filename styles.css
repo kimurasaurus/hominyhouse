@@ -1,0 +1,413 @@
+/* ————— Hominy House ————— */
+
+:root {
+  --bg: #000000;
+  --bg-alt: #0a0a0a;
+  --card: #0d0d0d;
+  --ink: #f4f3ef;
+  --ink-soft: #a9a7a0;
+  --muted: #6d6b65;
+  --line: rgba(255, 255, 255, 0.09);
+  --accent: #c9703a;
+  --radius: 14px;
+  --max: 1120px;
+  --font: "Megunso", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Megunso", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-banner: "Megunso", "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ————— Megunso (site banner font) —————
+   Drop the Megunso font files from
+   https://www.fontspace.com/megunso-font-f120044
+   into the "fonts" folder to enable. Falls back
+   gracefully to Inter Tight if the files are absent. */
+@font-face {
+  font-family: "Megunso";
+  src: url("fonts/MegunsoDemoVersion-j9WD7.otf") format("opentype"),
+       url("fonts/Megunso-Regular.woff2") format("woff2"),
+       url("fonts/Megunso-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: #fff; }
+
+img { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container.narrow { max-width: 720px; }
+
+/* ————— Header ————— */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.wordmark {
+  font-family: var(--font-banner);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.wordmark.small { font-size: 1.1rem; }
+
+.site-nav { display: flex; gap: 32px; }
+
+.site-nav a {
+  font-family: var(--font-banner);
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover { color: var(--ink); }
+
+/* ————— Hero ————— */
+
+.hero {
+  position: relative;
+  min-height: 96vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--bg);
+}
+
+.hero-media { position: absolute; inset: 0; }
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* fade the image into the black background at top and bottom */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 75%, transparent 100%);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.25) 40%,
+    transparent 70%
+  );
+}
+
+.hero-content {
+  position: relative;
+  padding-bottom: 104px;
+  padding-top: 140px;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3.6rem, 10vw, 8rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.98;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  opacity: 0.85;
+}
+
+/* ————— Sections ————— */
+
+.section { padding: 110px 0; }
+
+.section-alt { background: var(--bg-alt); }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
+.section-head.center {
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+
+.section-head h2 {
+  font-family: var(--font-display);
+  font-size: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+
+.more {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--accent);
+  transition: opacity 0.2s ease;
+}
+
+.more:hover { opacity: 0.7; }
+
+/* ————— Story cards ————— */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 34px 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.tag {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  background: rgba(201, 112, 58, 0.12);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.card h3 a { transition: color 0.2s ease; }
+
+.card h3 a:hover { color: var(--accent); }
+
+.card p {
+  flex: 1;
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+}
+
+.card time {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* ————— News list ————— */
+
+.news-list { list-style: none; }
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 20px;
+  align-items: baseline;
+  padding: 24px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-list li:first-child { border-top: 1px solid var(--line); }
+
+.news-list time {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.news-list a {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.news-list a:hover { color: var(--accent); padding-left: 6px; }
+
+/* ————— Conversation ————— */
+
+.prompt {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 44px;
+  background: var(--card);
+}
+
+.prompt-q {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+
+.prompt-form {
+  display: flex;
+  gap: 12px;
+}
+
+.prompt-form input {
+  flex: 1;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: #161616;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 15px 18px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.prompt-form input::placeholder { color: var(--muted); }
+
+.prompt-form input:focus {
+  border-color: var(--accent);
+  background: #1a1a1a;
+}
+
+.prompt-form button {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  background: var(--ink);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 28px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.prompt-form button:hover { background: var(--accent); color: #fff; }
+
+.prompt-form button:active { transform: scale(0.97); }
+
+/* ————— Footer ————— */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 52px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.fine { font-size: 0.88rem; color: var(--ink-soft); }
+
+.muted { color: var(--muted); }
+
+/* ————— Responsive ————— */
+
+@media (max-width: 860px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .section { padding: 84px 0; }
+  .site-nav { gap: 20px; }
+  .hero-media img {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 80%, transparent 100%);
+  }
+}
+
+@media (max-width: 560px) {
+  .wordmark { font-size: 1.2rem; }
+  .site-nav { gap: 16px; }
+  .site-nav a { font-size: 0.92rem; }
+  .prompt-form { flex-direction: column; }
+  .prompt-form button { width: 100%; }
+  .news-list li { grid-template-columns: 1fr; gap: 4px; }
+  .footer-inner { justify-content: center; text-align: center; }
+}
