@@ -259,9 +259,25 @@
             allowfullscreen
             loading="lazy"></iframe>
         </div>
-        <div class="hero__scroll">
-          <p class="hero__scroll-text">Scroll down for new releases, news, and album recommendations.</p>
-          <span class="hero__scroll-arrow" aria-hidden="true"></span>
+        <div class="hero__youtube">
+          <div class="hero__yt-head">
+            <span class="hero__yt-label">YouTube &middot; Hominy House Volume 1</span>
+            <a class="hero__yt-link" href="https://youtube.com/playlist?list=PLRSXgl65oiTU" target="_blank" rel="noopener">Open playlist &rarr;</a>
+          </div>
+          <ul class="hero__yt-list">
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=HZuwCW7zle4" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Hunter's Mark - Howling Giant</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=9d6Ub7O8eIk" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">The Sonic Ride - Astroqueen</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=_2ReKyzngrM" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">From Scythe To Sceptre - Be'lakor</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=UiVifD-59IE" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Grey Garden - Windhand</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=lSGzfr3UQO4" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Stressed Elephant - BISON</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=kjfabpE-6so" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Canyon - Deathchant</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=H7HunbrSuwI" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">The Momentary Bliss - Soilwork</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=wI5WXSjrkT8" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Endless Flight - Egypt</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=DtwntR8f6wE" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Blood Spiller - Cave In</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=2I67ckXN444" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Let the Sky Fall - Firestone</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=zkaynH3y3Y0" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">Vast Acid - Ruby the Hatchet</span></a></li>
+            <li><a class="hero__yt-item" href="https://www.youtube.com/watch?v=_vLcVlz7-Ak" target="_blank" rel="noopener"><span class="hero__yt-play" aria-hidden="true"></span><span class="hero__yt-title">The End (Live) - Elder</span></a></li>
+          </ul>
         </div>
       </div>
 
@@ -1272,11 +1288,19 @@
 
     <!-- ===== Featured ===== -->
     <section class="section featured reveal" id="featured">
-      <div class="section__head">
+      <div class="section__head section__head--recs">
         <h2 class="section__title">Recommendations</h2>
+        <div class="rec-jump">
+          <label class="rec-jump__label" for="rec-jump">Jump to a review</label>
+          <select class="rec-jump__select" id="rec-jump">
+            <option value="">Select a review&hellip;</option>
+            <option value="rec-lazy">10-14-2026 &middot; Lazy &mdash; Elvis Deluxe</option>
+            <option value="rec-valley">10-09-2026 &middot; Valley of the Snake &mdash; Ruby the Hatchet</option>
+          </select>
+        </div>
       </div>
 
-      <article class="feature-card">
+      <article class="feature-card" id="rec-lazy">
         <img class="feature-card__cover" src="images/ElvisDeluxe_Lazy.jpg" alt="Lazy album cover by Elvis Deluxe" />
         <div class="feature-card__body">
           <span class="tag tag--accent">Featured album</span>
@@ -1305,7 +1329,7 @@
         </div>
       </article>
 
-      <article class="feature-card">
+      <article class="feature-card" id="rec-valley">
         <img class="feature-card__cover" src="images/FA1_ValleyoftheSnake_RubytheHatchet.jpg" alt="Valley of the Snake album cover by Ruby the Hatchet" />
         <div class="feature-card__body">
           <h3 class="feature-card__title">Valley of the Snake</h3>
@@ -1409,8 +1433,18 @@
       });
     }
 
+    // Recommendations: "jump to a review" dropdown
+    const recJump = document.getElementById('rec-jump');
+    if (recJump) {
+      recJump.addEventListener('change', () => {
+        const target = recJump.value && document.getElementById(recJump.value);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        recJump.value = '';
+      });
+    }
+
     // Cursor-follow glow on every container/box
-    document.querySelectorAll('.card, .news, .releases, .feature-card, .subscribe__box, .hero__playlist').forEach(card => {
+    document.querySelectorAll('.card, .news, .releases, .feature-card, .subscribe__box, .hero__playlist, .hero__youtube').forEach(card => {
       card.addEventListener('pointermove', (e) => {
         const r = card.getBoundingClientRect();
         card.style.setProperty('--mx', ((e.clientX - r.left) / r.width) * 100 + '%');
