@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notable Bands by Genre — Hominypedia</title>
+<meta name="description" content="Bands of stoner rock, space rock, psychedelic, desert rock, acid rock, fuzz, doom, sludge, progressive, melodic death, post and occult — each linked to its Wikipedia article.">
+<link rel="icon" href="../images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="hominypedia.css">
+</head>
+
+<body class="hp">
+
+<div id="page-top" class="page-top" aria-hidden="true"></div>
+
+<!-- ===== Top Banner ===== -->
+  <header class="banner" id="top">
+    <a class="brand" href="../index.html" aria-label="Hominy House home">
+      <img class="brand__logo" src="../images/logo.png" alt="Hominy House logo" />
+      <span class="brand__name">Hominy&nbsp;House</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+    <a class="nav__link" href="../index.html"><span class="nav__hominy" aria-hidden="true"></span>Home</a>
+    <a class="nav__link" href="../releases.html"><span class="nav__hominy" aria-hidden="true"></span>Release Radar &amp; News</a>
+    <a class="nav__link" href="../reviews.html"><span class="nav__hominy" aria-hidden="true"></span>Reviews</a>
+    <a class="nav__link nav__link--active" href="../hominypedia.html" aria-current="page"><span class="nav__hominy" aria-hidden="true"></span>Hominypedia</a>
+    <a class="nav__link" href="../index.html#subscribe"><span class="nav__hominy" aria-hidden="true"></span>Join</a>
+  </nav>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+
+<!-- ===== Hominypedia sub-navigation ===== -->
+  <nav class="hp-nav" aria-label="Hominypedia">
+    <div class="hp-nav__inner">
+      <span class="hp-nav__brand">Hominypedia</span>
+      <a href="../hominypedia.html">Genres</a>
+      <a href="bands.html" aria-current="page">Bands</a>
+      <a href="gear.html">Gear</a>
+    </div>
+  </nav>
+
+<div class="layout">
+
+  <aside class="rail">
+    <div class="rail-box">
+      <h3>Band by Genre</h3>
+      <ul class="rail-tree">
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-acid" aria-label="Show Acid bands">+</button><a href="#acid">Acid</a></div>
+          <ul id="rail-acid" class="rail-bands" hidden>
+            <li><a href="#band-acid-blue-cheer">Blue Cheer</a></li>
+            <li><a href="#band-acid-iron-butterfly">Iron Butterfly</a></li>
+            <li><a href="#band-acid-steppenwolf">Steppenwolf</a></li>
+            <li><a href="#band-acid-jimi-hendrix">Jimi Hendrix</a></li>
+            <li><a href="#band-acid-vanilla-fudge">Vanilla Fudge</a></li>
+            <li><a href="#band-acid-cream">Cream</a></li>
+            <li><a href="#band-acid-the-doors">The Doors</a></li>
+            <li><a href="#band-acid-mc5">MC5</a></li>
+            <li><a href="#band-acid-deep-purple">Deep Purple</a></li>
+            <li><a href="#band-acid-black-sabbath">Black Sabbath</a></li>
+            <li><a href="#band-acid-the-13th-floor-elevators">The 13th Floor Elevators</a></li>
+            <li><a href="#band-acid-high-tide">High Tide</a></li>
+            <li><a href="#band-acid-the-amboy-dukes">The Amboy Dukes</a></li>
+            <li><a href="#band-acid-big-brother-and-the-holding-company">Big Brother and the Holding Company</a></li>
+            <li><a href="#band-acid-quicksilver-messenger-service">Quicksilver Messenger Service</a></li>
+            <li><a href="#band-acid-grateful-dead">Grateful Dead</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-desert" aria-label="Show Desert bands">+</button><a href="#desert">Desert</a></div>
+          <ul id="rail-desert" class="rail-bands" hidden>
+            <li><a href="#band-desert-kyuss">Kyuss</a></li>
+            <li><a href="#band-desert-queens-of-the-stone-age">Queens of the Stone Age</a></li>
+            <li><a href="#band-desert-yawning-man">Yawning Man</a></li>
+            <li><a href="#band-desert-brant-bjork">Brant Bjork</a></li>
+            <li><a href="#band-desert-slo-burn">Slo Burn</a></li>
+            <li><a href="#band-desert-unida">Unida</a></li>
+            <li><a href="#band-desert-hermano">Hermano</a></li>
+            <li><a href="#band-desert-mondo-generator">Mondo Generator</a></li>
+            <li><a href="#band-desert-fatso-jetson">Fatso Jetson</a></li>
+            <li><a href="#band-desert-nebula">Nebula</a></li>
+            <li><a href="#band-desert-fu-manchu">Fu Manchu</a></li>
+            <li><a href="#band-desert-masters-of-reality">Masters of Reality</a></li>
+            <li><a href="#band-desert-vista-chino">Vista Chino</a></li>
+            <li><a href="#band-desert-the-desert-sessions">The Desert Sessions</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-doom" aria-label="Show Doom bands">+</button><a href="#doom">Doom</a></div>
+          <ul id="rail-doom" class="rail-bands" hidden>
+            <li><a href="#band-doom-black-sabbath">Black Sabbath</a></li>
+            <li><a href="#band-doom-pentagram">Pentagram</a></li>
+            <li><a href="#band-doom-saint-vitus">Saint Vitus</a></li>
+            <li><a href="#band-doom-trouble">Trouble</a></li>
+            <li><a href="#band-doom-candlemass">Candlemass</a></li>
+            <li><a href="#band-doom-witchfinder-general">Witchfinder General</a></li>
+            <li><a href="#band-doom-pagan-altar">Pagan Altar</a></li>
+            <li><a href="#band-doom-cirith-ungol">Cirith Ungol</a></li>
+            <li><a href="#band-doom-the-obsessed">The Obsessed</a></li>
+            <li><a href="#band-doom-cathedral">Cathedral</a></li>
+            <li><a href="#band-doom-solitude-aeturnus">Solitude Aeturnus</a></li>
+            <li><a href="#band-doom-reverend-bizarre">Reverend Bizarre</a></li>
+            <li><a href="#band-doom-evoken">Evoken</a></li>
+            <li><a href="#band-doom-yob">Yob</a></li>
+            <li><a href="#band-doom-khemmis">Khemmis</a></li>
+            <li><a href="#band-doom-pallbearer">Pallbearer</a></li>
+            <li><a href="#band-doom-conan">Conan</a></li>
+            <li><a href="#band-doom-electric-wizard">Electric Wizard</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-heavy-psych" aria-label="Show Psychedelic bands">+</button><a href="#heavy-psych">Psychedelic</a></div>
+          <ul id="rail-heavy-psych" class="rail-bands" hidden>
+            <li><a href="#band-heavy-psych-jimi-hendrix">Jimi Hendrix</a></li>
+            <li><a href="#band-heavy-psych-pink-floyd">Pink Floyd</a></li>
+            <li><a href="#band-heavy-psych-the-doors">The Doors</a></li>
+            <li><a href="#band-heavy-psych-jefferson-airplane">Jefferson Airplane</a></li>
+            <li><a href="#band-heavy-psych-cream">Cream</a></li>
+            <li><a href="#band-heavy-psych-iron-butterfly">Iron Butterfly</a></li>
+            <li><a href="#band-heavy-psych-the-13th-floor-elevators">The 13th Floor Elevators</a></li>
+            <li><a href="#band-heavy-psych-blue-cheer">Blue Cheer</a></li>
+            <li><a href="#band-heavy-psych-hawkwind">Hawkwind</a></li>
+            <li><a href="#band-heavy-psych-dead-meadow">Dead Meadow</a></li>
+            <li><a href="#band-heavy-psych-comets-on-fire">Comets on Fire</a></li>
+            <li><a href="#band-heavy-psych-earthless">Earthless</a></li>
+            <li><a href="#band-heavy-psych-all-them-witches">All Them Witches</a></li>
+            <li><a href="#band-heavy-psych-radio-moscow">Radio Moscow</a></li>
+            <li><a href="#band-heavy-psych-the-black-angels">The Black Angels</a></li>
+            <li><a href="#band-heavy-psych-the-brian-jonestown-massacre">The Brian Jonestown Massacre</a></li>
+            <li><a href="#band-heavy-psych-the-heads">The Heads</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-melodic-death" aria-label="Show Melodic Death bands">+</button><a href="#melodic-death">Melodic Death</a></div>
+          <ul id="rail-melodic-death" class="rail-bands" hidden>
+            <li><a href="#band-melodic-death-in-flames">In Flames</a></li>
+            <li><a href="#band-melodic-death-dark-tranquillity">Dark Tranquillity</a></li>
+            <li><a href="#band-melodic-death-at-the-gates">At the Gates</a></li>
+            <li><a href="#band-melodic-death-carcass">Carcass</a></li>
+            <li><a href="#band-melodic-death-children-of-bodom">Children of Bodom</a></li>
+            <li><a href="#band-melodic-death-insomnium">Insomnium</a></li>
+            <li><a href="#band-melodic-death-kalmah">Kalmah</a></li>
+            <li><a href="#band-melodic-death-amon-amarth">Amon Amarth</a></li>
+            <li><a href="#band-melodic-death-arch-enemy">Arch Enemy</a></li>
+            <li><a href="#band-melodic-death-the-black-dahlia-murder">The Black Dahlia Murder</a></li>
+            <li><a href="#band-melodic-death-soilwork">Soilwork</a></li>
+            <li><a href="#band-melodic-death-be-lakor">Be'lakor</a></li>
+            <li><a href="#band-melodic-death-hypocrisy">Hypocrisy</a></li>
+            <li><a href="#band-melodic-death-scar-symmetry">Scar Symmetry</a></li>
+            <li><a href="#band-melodic-death-omnium-gatherum">Omnium Gatherum</a></li>
+            <li><a href="#band-melodic-death-wintersun">Wintersun</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-occult" aria-label="Show Occult bands">+</button><a href="#occult">Occult</a></div>
+          <ul id="rail-occult" class="rail-bands" hidden>
+            <li><a href="#band-occult-coven">Coven</a></li>
+            <li><a href="#band-occult-black-widow">Black Widow</a></li>
+            <li><a href="#band-occult-black-sabbath">Black Sabbath</a></li>
+            <li><a href="#band-occult-pentagram">Pentagram</a></li>
+            <li><a href="#band-occult-ghost">Ghost</a></li>
+            <li><a href="#band-occult-the-devil-s-blood">The Devil's Blood</a></li>
+            <li><a href="#band-occult-blood-ceremony">Blood Ceremony</a></li>
+            <li><a href="#band-occult-uncle-acid-the-deadbeats">Uncle Acid &amp; the Deadbeats</a></li>
+            <li><a href="#band-occult-jess-and-the-ancient-ones">Jess and the Ancient Ones</a></li>
+            <li><a href="#band-occult-witchcraft">Witchcraft</a></li>
+            <li><a href="#band-occult-green-lung">Green Lung</a></li>
+            <li><a href="#band-occult-purson">Purson</a></li>
+            <li><a href="#band-occult-jex-thoth">Jex Thoth</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-post" aria-label="Show Post bands">+</button><a href="#post">Post</a></div>
+          <ul id="rail-post" class="rail-bands" hidden>
+            <li><a href="#band-post-neurosis">Neurosis</a></li>
+            <li><a href="#band-post-isis">Isis</a></li>
+            <li><a href="#band-post-cult-of-luna">Cult of Luna</a></li>
+            <li><a href="#band-post-pelican">Pelican</a></li>
+            <li><a href="#band-post-godflesh">Godflesh</a></li>
+            <li><a href="#band-post-jesu">Jesu</a></li>
+            <li><a href="#band-post-russian-circles">Russian Circles</a></li>
+            <li><a href="#band-post-rosetta">Rosetta</a></li>
+            <li><a href="#band-post-alcest">Alcest</a></li>
+            <li><a href="#band-post-deafheaven">Deafheaven</a></li>
+            <li><a href="#band-post-baroness">Baroness</a></li>
+            <li><a href="#band-post-mastodon">Mastodon</a></li>
+            <li><a href="#band-post-sumac">Sumac</a></li>
+            <li><a href="#band-post-elder">Elder</a></li>
+            <li><a href="#band-post-amenra">Amenra</a></li>
+            <li><a href="#band-post-old-man-gloom">Old Man Gloom</a></li>
+            <li><a href="#band-post-fugazi">Fugazi</a></li>
+            <li><a href="#band-post-quicksand">Quicksand</a></li>
+            <li><a href="#band-post-helmet">Helmet</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-progressive" aria-label="Show Progressive bands">+</button><a href="#progressive">Progressive</a></div>
+          <ul id="rail-progressive" class="rail-bands" hidden>
+            <li><a href="#band-progressive-king-crimson">King Crimson</a></li>
+            <li><a href="#band-progressive-yes">Yes</a></li>
+            <li><a href="#band-progressive-genesis">Genesis</a></li>
+            <li><a href="#band-progressive-jethro-tull">Jethro Tull</a></li>
+            <li><a href="#band-progressive-emerson-lake-palmer">Emerson, Lake &amp; Palmer</a></li>
+            <li><a href="#band-progressive-rush">Rush</a></li>
+            <li><a href="#band-progressive-pink-floyd">Pink Floyd</a></li>
+            <li><a href="#band-progressive-queensr-che">Queensrÿche</a></li>
+            <li><a href="#band-progressive-fates-warning">Fates Warning</a></li>
+            <li><a href="#band-progressive-dream-theater">Dream Theater</a></li>
+            <li><a href="#band-progressive-tool">Tool</a></li>
+            <li><a href="#band-progressive-opeth">Opeth</a></li>
+            <li><a href="#band-progressive-yob">Yob</a></li>
+            <li><a href="#band-progressive-elder">Elder</a></li>
+            <li><a href="#band-progressive-pallbearer">Pallbearer</a></li>
+            <li><a href="#band-progressive-mastodon">Mastodon</a></li>
+            <li><a href="#band-progressive-porcupine-tree">Porcupine Tree</a></li>
+            <li><a href="#band-progressive-between-the-buried-and-me">Between the Buried and Me</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-sludge" aria-label="Show Sludge bands">+</button><a href="#sludge">Sludge</a></div>
+          <ul id="rail-sludge" class="rail-bands" hidden>
+            <li><a href="#band-sludge-melvins">Melvins</a></li>
+            <li><a href="#band-sludge-eyehategod">Eyehategod</a></li>
+            <li><a href="#band-sludge-crowbar">Crowbar</a></li>
+            <li><a href="#band-sludge-acid-bath">Acid Bath</a></li>
+            <li><a href="#band-sludge-down">Down</a></li>
+            <li><a href="#band-sludge-soilent-green">Soilent Green</a></li>
+            <li><a href="#band-sludge-exhorder">Exhorder</a></li>
+            <li><a href="#band-sludge-neurosis">Neurosis</a></li>
+            <li><a href="#band-sludge-grief">Grief</a></li>
+            <li><a href="#band-sludge-dystopia">Dystopia</a></li>
+            <li><a href="#band-sludge-high-on-fire">High on Fire</a></li>
+            <li><a href="#band-sludge-weedeater">Weedeater</a></li>
+            <li><a href="#band-sludge-bongzilla">Bongzilla</a></li>
+            <li><a href="#band-sludge-mastodon">Mastodon</a></li>
+            <li><a href="#band-sludge-baroness">Baroness</a></li>
+            <li><a href="#band-sludge-kylesa">Kylesa</a></li>
+            <li><a href="#band-sludge-torche">Torche</a></li>
+            <li><a href="#band-sludge-iron-monkey">Iron Monkey</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-space" aria-label="Show Space bands">+</button><a href="#space">Space</a></div>
+          <ul id="rail-space" class="rail-bands" hidden>
+            <li><a href="#band-space-hawkwind">Hawkwind</a></li>
+            <li><a href="#band-space-pink-floyd">Pink Floyd</a></li>
+            <li><a href="#band-space-gong">Gong</a></li>
+            <li><a href="#band-space-amon-d-l-ii">Amon Düül II</a></li>
+            <li><a href="#band-space-nektar">Nektar</a></li>
+            <li><a href="#band-space-spacemen-3">Spacemen 3</a></li>
+            <li><a href="#band-space-spiritualized">Spiritualized</a></li>
+            <li><a href="#band-space-ozric-tentacles">Ozric Tentacles</a></li>
+            <li><a href="#band-space-earthless">Earthless</a></li>
+            <li><a href="#band-space-slift">Slift</a></li>
+            <li><a href="#band-space-yuri-gagarin">Yuri Gagarin</a></li>
+            <li><a href="#band-space-white-hills">White Hills</a></li>
+            <li><a href="#band-space-dead-meadow">Dead Meadow</a></li>
+          </ul>
+        </li>
+        <li class="rail-genre">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="rail-stoner" aria-label="Show Stoner bands">+</button><a href="#stoner">Stoner</a></div>
+          <ul id="rail-stoner" class="rail-bands" hidden>
+            <li><a href="#band-stoner-kyuss">Kyuss</a></li>
+            <li><a href="#band-stoner-sleep">Sleep</a></li>
+            <li><a href="#band-stoner-fu-manchu">Fu Manchu</a></li>
+            <li><a href="#band-stoner-monster-magnet">Monster Magnet</a></li>
+            <li><a href="#band-stoner-queens-of-the-stone-age">Queens of the Stone Age</a></li>
+            <li><a href="#band-stoner-clutch">Clutch</a></li>
+            <li><a href="#band-stoner-orange-goblin">Orange Goblin</a></li>
+            <li><a href="#band-stoner-acid-king">Acid King</a></li>
+            <li><a href="#band-stoner-earthless">Earthless</a></li>
+            <li><a href="#band-stoner-truckfighters">Truckfighters</a></li>
+            <li><a href="#band-stoner-dozer">Dozer</a></li>
+            <li><a href="#band-stoner-greenleaf">Greenleaf</a></li>
+            <li><a href="#band-stoner-stoned-jesus">Stoned Jesus</a></li>
+            <li><a href="#band-stoner-graveyard">Graveyard</a></li>
+            <li><a href="#band-stoner-kadavar">Kadavar</a></li>
+            <li><a href="#band-stoner-colour-haze">Colour Haze</a></li>
+            <li><a href="#band-stoner-red-fang">Red Fang</a></li>
+            <li><a href="#band-stoner-the-sword">The Sword</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="article">
+
+    <p class="crumbs"><a href="../hominypedia.html">Hominypedia</a> &rsaquo; Notable Bands by Genre</p>
+    <h1 class="page-title">Notable Bands by Genre</h1>
+    <hr class="title-rule">
+
+    <h2 id="acid">Acid</h2>
+    <p class="small">Acid rock. <a href="genres/acid-rock.html">Read the Acid page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-acid-blue-cheer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Blue_Cheer">Blue Cheer</a><span class="multi">*</span></td><td>San Francisco, California, U.S.</td><td>1966–1975, 1978–1979, 1984–1994, 1999…</td></tr>
+          <tr id="band-acid-iron-butterfly"><td><a class="ext" href="https://en.wikipedia.org/wiki/Iron_Butterfly">Iron Butterfly</a><span class="multi">*</span></td><td>San Diego, California, U.S.</td><td>1966–1971, 1974–1985, 1987–2012, 2015…</td></tr>
+          <tr id="band-acid-steppenwolf"><td><a class="ext" href="https://en.wikipedia.org/wiki/Steppenwolf_(band)">Steppenwolf</a></td><td>Los Angeles, California, U.S.</td><td>1967–1972, 1974–1976, 1980–2018</td></tr>
+          <tr id="band-acid-jimi-hendrix"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jimi_Hendrix">Jimi Hendrix</a><span class="multi">*</span></td><td>London, England</td><td>1966–1970</td></tr>
+          <tr id="band-acid-vanilla-fudge"><td><a class="ext" href="https://en.wikipedia.org/wiki/Vanilla_Fudge">Vanilla Fudge</a></td><td>Long Island, New York, U.S.</td><td>1967–1970, 1982–1984, 1987–1988, 1991…</td></tr>
+          <tr id="band-acid-cream"><td><a class="ext" href="https://en.wikipedia.org/wiki/Cream_(band)">Cream</a><span class="multi">*</span></td><td>London, England</td><td>1966–1968, 1993, 2005</td></tr>
+          <tr id="band-acid-the-doors"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Doors">The Doors</a><span class="multi">*</span></td><td>Los Angeles, California, U.S.</td><td>—</td></tr>
+          <tr id="band-acid-mc5"><td><a class="ext" href="https://en.wikipedia.org/wiki/MC5">MC5</a><span class="multi">*</span></td><td>Lincoln Park, Michigan, U.S.</td><td>1963–1972, 1974–1975, 1992, 2003–2011…</td></tr>
+          <tr id="band-acid-deep-purple"><td><a class="ext" href="https://en.wikipedia.org/wiki/Deep_Purple">Deep Purple</a></td><td>London, England</td><td>1968–1976, 1984–present</td></tr>
+          <tr id="band-acid-black-sabbath"><td><a class="ext" href="https://en.wikipedia.org/wiki/Black_Sabbath">Black Sabbath</a><span class="multi">*</span></td><td>Birmingham, England</td><td>—</td></tr>
+          <tr id="band-acid-the-13th-floor-elevators"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_13th_Floor_Elevators">The 13th Floor Elevators</a><span class="multi">*</span></td><td>Austin, Texas, U.S.</td><td>1965–1969, 1977, 1984, 2015</td></tr>
+          <tr id="band-acid-high-tide"><td><a class="ext" href="https://en.wikipedia.org/wiki/High_Tide_(band)">High Tide</a></td><td>Northampton, Northamptonshire, England</td><td>1969–1970, 1989–1990</td></tr>
+          <tr id="band-acid-the-amboy-dukes"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Amboy_Dukes_(band)">The Amboy Dukes</a></td><td>Chicago, Illinois, U.S.</td><td>1964–1975</td></tr>
+          <tr id="band-acid-big-brother-and-the-holding-company"><td><a class="ext" href="https://en.wikipedia.org/wiki/Big_Brother_and_the_Holding_Company">Big Brother and the Holding Company</a></td><td>San Francisco, California</td><td>1965–1968, 1969–1972, 1987–present</td></tr>
+          <tr id="band-acid-quicksilver-messenger-service"><td><a class="ext" href="https://en.wikipedia.org/wiki/Quicksilver_Messenger_Service">Quicksilver Messenger Service</a></td><td>San Francisco, California, U.S.</td><td>1965–1979, , 1984–1996 (Gary Duncan's…</td></tr>
+          <tr id="band-acid-grateful-dead"><td><a class="ext" href="https://en.wikipedia.org/wiki/Grateful_Dead">Grateful Dead</a></td><td>Palo Alto, California, U.S.</td><td>1965–1995</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="desert">Desert</h2>
+    <p class="small">Desert rock. <a href="genres/palm-desert-scene.html">Read the Desert page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-desert-kyuss"><td><a class="ext" href="https://en.wikipedia.org/wiki/Kyuss">Kyuss</a><span class="multi">*</span></td><td>Palm Desert, California, U.S.</td><td>1987–1995</td></tr>
+          <tr id="band-desert-queens-of-the-stone-age"><td><a class="ext" href="https://en.wikipedia.org/wiki/Queens_of_the_Stone_Age">Queens of the Stone Age</a><span class="multi">*</span></td><td>Palm Desert, California, U.S.</td><td>1996–present</td></tr>
+          <tr id="band-desert-yawning-man"><td><a class="ext" href="https://en.wikipedia.org/wiki/Yawning_Man">Yawning Man</a></td><td>La Quinta, California, U.S.</td><td>1986–present</td></tr>
+          <tr id="band-desert-brant-bjork"><td><a class="ext" href="https://en.wikipedia.org/wiki/Brant_Bjork">Brant Bjork</a></td><td>Palm Springs, California, U.S.</td><td>1987–present</td></tr>
+          <tr id="band-desert-slo-burn"><td><a class="ext" href="https://en.wikipedia.org/wiki/Slo_Burn">Slo Burn</a></td><td>Palm Desert, California, U.S.</td><td>1996–1998, 2017</td></tr>
+          <tr id="band-desert-unida"><td><a class="ext" href="https://en.wikipedia.org/wiki/Unida">Unida</a></td><td>United States</td><td>1998–2004, 2008, 2012–2014, 2022–present</td></tr>
+          <tr id="band-desert-hermano"><td><a class="ext" href="https://en.wikipedia.org/wiki/Hermano_(band)">Hermano</a></td><td>U.S.</td><td>1998–present</td></tr>
+          <tr id="band-desert-mondo-generator"><td><a class="ext" href="https://en.wikipedia.org/wiki/Mondo_Generator">Mondo Generator</a></td><td>Van Nuys, California, U.S.</td><td>1997–present</td></tr>
+          <tr id="band-desert-fatso-jetson"><td><a class="ext" href="https://en.wikipedia.org/wiki/Fatso_Jetson">Fatso Jetson</a></td><td>Palm Desert, California, U.S.</td><td>1994–present</td></tr>
+          <tr id="band-desert-nebula"><td><a class="ext" href="https://en.wikipedia.org/wiki/Nebula_(band)">Nebula</a></td><td>Los Angeles, California, U.S.</td><td>1997–2010, 2017–present</td></tr>
+          <tr id="band-desert-fu-manchu"><td><a class="ext" href="https://en.wikipedia.org/wiki/Fu_Manchu_(band)">Fu Manchu</a><span class="multi">*</span></td><td>Orange County, California, U.S.</td><td>1985–present</td></tr>
+          <tr id="band-desert-masters-of-reality"><td><a class="ext" href="https://en.wikipedia.org/wiki/Masters_of_Reality">Masters of Reality</a></td><td>Syracuse, New York, U.S.</td><td>1981–present</td></tr>
+          <tr id="band-desert-vista-chino"><td><a class="ext" href="https://en.wikipedia.org/wiki/Vista_Chino">Vista Chino</a></td><td>Los Angeles, California, U.S.</td><td>2010–2014</td></tr>
+          <tr id="band-desert-the-desert-sessions"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Desert_Sessions">The Desert Sessions</a></td><td>Palm Desert, California, U.S.</td><td>1997–2004, 2018–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="doom">Doom</h2>
+    <p class="small">Doom metal. <a href="genres/doom-metal.html">Read the Doom page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-doom-black-sabbath"><td><a class="ext" href="https://en.wikipedia.org/wiki/Black_Sabbath">Black Sabbath</a><span class="multi">*</span></td><td>Birmingham, England</td><td>—</td></tr>
+          <tr id="band-doom-pentagram"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pentagram_(band)">Pentagram</a><span class="multi">*</span></td><td>Alexandria, Virginia, U.S.</td><td>1971–1977, 1978–1979, 1983–2005, 2008…</td></tr>
+          <tr id="band-doom-saint-vitus"><td><a class="ext" href="https://en.wikipedia.org/wiki/Saint_Vitus_(band)">Saint Vitus</a></td><td>Los Angeles, California, U.S.</td><td>1978–1991, 1992–1996, 2003, 2008–present</td></tr>
+          <tr id="band-doom-trouble"><td><a class="ext" href="https://en.wikipedia.org/wiki/Trouble_(band)">Trouble</a></td><td>Chicago, Illinois, U.S.</td><td>1978&amp;ndash;present</td></tr>
+          <tr id="band-doom-candlemass"><td><a class="ext" href="https://en.wikipedia.org/wiki/Candlemass_(band)">Candlemass</a></td><td>Stockholm, Sweden</td><td>1984–1993, 1997–2002, 2004–present</td></tr>
+          <tr id="band-doom-witchfinder-general"><td><a class="ext" href="https://en.wikipedia.org/wiki/Witchfinder_General_(band)">Witchfinder General</a></td><td>Stourbridge, England</td><td>1979–1984, 2006–2008</td></tr>
+          <tr id="band-doom-pagan-altar"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pagan_Altar">Pagan Altar</a></td><td>Brockley, London, England</td><td>1978–1985, 2004–present</td></tr>
+          <tr id="band-doom-cirith-ungol"><td><a class="ext" href="https://en.wikipedia.org/wiki/Cirith_Ungol_(band)">Cirith Ungol</a></td><td>Ventura, California, U.S.</td><td>1971–1992, 2015–present</td></tr>
+          <tr id="band-doom-the-obsessed"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Obsessed">The Obsessed</a></td><td>Potomac, Maryland, U.S.</td><td>1979–1986, 1989–1995, 2011–2013, 2016…</td></tr>
+          <tr id="band-doom-cathedral"><td><a class="ext" href="https://en.wikipedia.org/wiki/Cathedral_(band)">Cathedral</a></td><td>Coventry, England</td><td>1989–2013</td></tr>
+          <tr id="band-doom-solitude-aeturnus"><td><a class="ext" href="https://en.wikipedia.org/wiki/Solitude_Aeturnus">Solitude Aeturnus</a></td><td>Arlington, Texas, U.S.</td><td>1987–2011, 2023–present</td></tr>
+          <tr id="band-doom-reverend-bizarre"><td><a class="ext" href="https://en.wikipedia.org/wiki/Reverend_Bizarre">Reverend Bizarre</a></td><td>Lohja, Finland</td><td>1995–2007</td></tr>
+          <tr id="band-doom-evoken"><td><a class="ext" href="https://en.wikipedia.org/wiki/Evoken">Evoken</a></td><td>Lyndhurst, New Jersey, U.S.</td><td>1992–present</td></tr>
+          <tr id="band-doom-yob"><td><a class="ext" href="https://en.wikipedia.org/wiki/Yob_(band)">Yob</a><span class="multi">*</span></td><td>Eugene, Oregon, U.S.</td><td>1996–2006, 2008–present</td></tr>
+          <tr id="band-doom-khemmis"><td><a class="ext" href="https://en.wikipedia.org/wiki/Khemmis_(band)">Khemmis</a></td><td>Denver, Colorado, U.S.</td><td>2012–present</td></tr>
+          <tr id="band-doom-pallbearer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pallbearer_(band)">Pallbearer</a><span class="multi">*</span></td><td>Little Rock, Arkansas, U.S.</td><td>2008–present</td></tr>
+          <tr id="band-doom-conan"><td><a class="ext" href="https://en.wikipedia.org/wiki/Conan_(band)">Conan</a></td><td>Liverpool, England</td><td>2006–present</td></tr>
+          <tr id="band-doom-electric-wizard"><td><a class="ext" href="https://en.wikipedia.org/wiki/Electric_Wizard">Electric Wizard</a><span class="multi">*</span></td><td>Dorset, England</td><td>1988–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="heavy-psych">Psychedelic</h2>
+    <p class="small">Psychedelic rock. <a href="genres/psychedelic-rock.html">Read the Psychedelic page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-heavy-psych-jimi-hendrix"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jimi_Hendrix">Jimi Hendrix</a><span class="multi">*</span></td><td>London, England</td><td>1966–1970</td></tr>
+          <tr id="band-heavy-psych-pink-floyd"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pink_Floyd">Pink Floyd</a><span class="multi">*</span></td><td>London, England</td><td>1965–1994, 2005, 2007, 2013–2014, 2022</td></tr>
+          <tr id="band-heavy-psych-the-doors"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Doors">The Doors</a><span class="multi">*</span></td><td>Los Angeles, California, U.S.</td><td>—</td></tr>
+          <tr id="band-heavy-psych-jefferson-airplane"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jefferson_Airplane">Jefferson Airplane</a></td><td>San Francisco, California, U.S.</td><td>1965–1973, 1989, 1996</td></tr>
+          <tr id="band-heavy-psych-cream"><td><a class="ext" href="https://en.wikipedia.org/wiki/Cream_(band)">Cream</a><span class="multi">*</span></td><td>London, England</td><td>1966–1968, 1993, 2005</td></tr>
+          <tr id="band-heavy-psych-iron-butterfly"><td><a class="ext" href="https://en.wikipedia.org/wiki/Iron_Butterfly">Iron Butterfly</a><span class="multi">*</span></td><td>San Diego, California, U.S.</td><td>1966–1971, 1974–1985, 1987–2012, 2015…</td></tr>
+          <tr id="band-heavy-psych-the-13th-floor-elevators"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_13th_Floor_Elevators">The 13th Floor Elevators</a><span class="multi">*</span></td><td>Austin, Texas, U.S.</td><td>1965–1969, 1977, 1984, 2015</td></tr>
+          <tr id="band-heavy-psych-blue-cheer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Blue_Cheer">Blue Cheer</a><span class="multi">*</span></td><td>San Francisco, California, U.S.</td><td>1966–1975, 1978–1979, 1984–1994, 1999…</td></tr>
+          <tr id="band-heavy-psych-hawkwind"><td><a class="ext" href="https://en.wikipedia.org/wiki/Hawkwind">Hawkwind</a><span class="multi">*</span></td><td>Ladbroke Grove, London, England</td><td>1969–present</td></tr>
+          <tr id="band-heavy-psych-dead-meadow"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dead_Meadow">Dead Meadow</a><span class="multi">*</span></td><td>Washington, D.C., United States</td><td>1998–present</td></tr>
+          <tr id="band-heavy-psych-comets-on-fire"><td><a class="ext" href="https://en.wikipedia.org/wiki/Comets_on_Fire">Comets on Fire</a></td><td>Santa Cruz, California, U.S.</td><td>1999–2008</td></tr>
+          <tr id="band-heavy-psych-earthless"><td><a class="ext" href="https://en.wikipedia.org/wiki/Earthless">Earthless</a><span class="multi">*</span></td><td>San Diego, California, U.S.</td><td>2001–present</td></tr>
+          <tr id="band-heavy-psych-all-them-witches"><td><a class="ext" href="https://en.wikipedia.org/wiki/All_Them_Witches">All Them Witches</a></td><td>Nashville, Tennessee, U.S.</td><td>2012–present</td></tr>
+          <tr id="band-heavy-psych-radio-moscow"><td><a class="ext" href="https://en.wikipedia.org/wiki/Radio_Moscow_(band)">Radio Moscow</a></td><td>Story City, Iowa, United States</td><td>2003–present</td></tr>
+          <tr id="band-heavy-psych-the-black-angels"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Black_Angels_(band)">The Black Angels</a></td><td>Austin, Texas, United States</td><td>2004–present</td></tr>
+          <tr id="band-heavy-psych-the-brian-jonestown-massacre"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Brian_Jonestown_Massacre">The Brian Jonestown Massacre</a></td><td>San Francisco, California, U.S.</td><td>1990–present</td></tr>
+          <tr id="band-heavy-psych-the-heads"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Heads_(British_band)">The Heads</a></td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="melodic-death">Melodic Death</h2>
+    <p class="small">Melodic death metal. <a href="genres/melodic-death-metal.html">Read the Melodic Death page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-melodic-death-in-flames"><td><a class="ext" href="https://en.wikipedia.org/wiki/In_Flames">In Flames</a></td><td>Gothenburg, Sweden</td><td>1990–present</td></tr>
+          <tr id="band-melodic-death-dark-tranquillity"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dark_Tranquillity">Dark Tranquillity</a></td><td>Billdal, Gothenburg, Sweden</td><td>1989–present</td></tr>
+          <tr id="band-melodic-death-at-the-gates"><td><a class="ext" href="https://en.wikipedia.org/wiki/At_the_Gates">At the Gates</a></td><td>Gothenburg, Sweden</td><td>—</td></tr>
+          <tr id="band-melodic-death-carcass"><td><a class="ext" href="https://en.wikipedia.org/wiki/Carcass_(band)">Carcass</a></td><td>Liverpool, England</td><td>1985–1996, 2007–present</td></tr>
+          <tr id="band-melodic-death-children-of-bodom"><td><a class="ext" href="https://en.wikipedia.org/wiki/Children_of_Bodom">Children of Bodom</a></td><td>Espoo, Uusimaa, Finland</td><td>1993–2019, 2025–present</td></tr>
+          <tr id="band-melodic-death-insomnium"><td><a class="ext" href="https://en.wikipedia.org/wiki/Insomnium">Insomnium</a></td><td>Joensuu, Finland</td><td>1997–present</td></tr>
+          <tr id="band-melodic-death-kalmah"><td><a class="ext" href="https://en.wikipedia.org/wiki/Kalmah">Kalmah</a></td><td>Pudasjärvi, Finland</td><td>1991–present</td></tr>
+          <tr id="band-melodic-death-amon-amarth"><td><a class="ext" href="https://en.wikipedia.org/wiki/Amon_Amarth">Amon Amarth</a></td><td>Tumba, Sweden</td><td>1992–present</td></tr>
+          <tr id="band-melodic-death-arch-enemy"><td><a class="ext" href="https://en.wikipedia.org/wiki/Arch_Enemy">Arch Enemy</a></td><td>Halmstad, Sweden</td><td>1995−present</td></tr>
+          <tr id="band-melodic-death-the-black-dahlia-murder"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Black_Dahlia_Murder_(band)">The Black Dahlia Murder</a></td><td>Waterford, Michigan, U.S.</td><td>2001–present</td></tr>
+          <tr id="band-melodic-death-soilwork"><td><a class="ext" href="https://en.wikipedia.org/wiki/Soilwork">Soilwork</a></td><td>Helsingborg, Sweden</td><td>1995–present</td></tr>
+          <tr id="band-melodic-death-be-lakor"><td><a class="ext" href="https://en.wikipedia.org/wiki/Be'lakor">Be'lakor</a></td><td>Melbourne, Victoria, Australia</td><td>2004–present</td></tr>
+          <tr id="band-melodic-death-hypocrisy"><td><a class="ext" href="https://en.wikipedia.org/wiki/Hypocrisy_(band)">Hypocrisy</a></td><td>Ludvika, Sweden</td><td>1991–present</td></tr>
+          <tr id="band-melodic-death-scar-symmetry"><td><a class="ext" href="https://en.wikipedia.org/wiki/Scar_Symmetry">Scar Symmetry</a></td><td>Avesta, Sweden</td><td>2004−present</td></tr>
+          <tr id="band-melodic-death-omnium-gatherum"><td><a class="ext" href="https://en.wikipedia.org/wiki/Omnium_Gatherum">Omnium Gatherum</a></td><td>Karhula, Finland</td><td>1996–present</td></tr>
+          <tr id="band-melodic-death-wintersun"><td><a class="ext" href="https://en.wikipedia.org/wiki/Wintersun">Wintersun</a></td><td>Helsinki, Finland</td><td>2003–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="occult">Occult</h2>
+    <p class="small">Occult rock. <a href="genres/occult-rock.html">Read the Occult page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-occult-coven"><td><a class="ext" href="https://en.wikipedia.org/wiki/Coven_(band)">Coven</a></td><td>Chicago, Illinois, U.S.</td><td>1967–1975, 2007–present</td></tr>
+          <tr id="band-occult-black-widow"><td><a class="ext" href="https://en.wikipedia.org/wiki/Black_Widow_(band)">Black Widow</a></td><td>Leicester, England</td><td>1966–1973, 2007–2014</td></tr>
+          <tr id="band-occult-black-sabbath"><td><a class="ext" href="https://en.wikipedia.org/wiki/Black_Sabbath">Black Sabbath</a><span class="multi">*</span></td><td>Birmingham, England</td><td>—</td></tr>
+          <tr id="band-occult-pentagram"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pentagram_(band)">Pentagram</a><span class="multi">*</span></td><td>Alexandria, Virginia, U.S.</td><td>1971–1977, 1978–1979, 1983–2005, 2008…</td></tr>
+          <tr id="band-occult-ghost"><td><a class="ext" href="https://en.wikipedia.org/wiki/Ghost_(Swedish_band)">Ghost</a></td><td>Linköping, Östergötland, Sweden</td><td>2006–2026</td></tr>
+          <tr id="band-occult-the-devil-s-blood"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Devil's_Blood">The Devil's Blood</a></td><td>Eindhoven, Netherlands</td><td>2006–2013</td></tr>
+          <tr id="band-occult-blood-ceremony"><td><a class="ext" href="https://en.wikipedia.org/wiki/Blood_Ceremony">Blood Ceremony</a></td><td>Toronto, Ontario, Canada</td><td>2006–present</td></tr>
+          <tr id="band-occult-uncle-acid-the-deadbeats"><td><a class="ext" href="https://en.wikipedia.org/wiki/Uncle_Acid_&_the_Deadbeats">Uncle Acid &amp; the Deadbeats</a></td><td>Cambridge, England</td><td>2009–present</td></tr>
+          <tr id="band-occult-jess-and-the-ancient-ones"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jess_and_the_Ancient_Ones">Jess and the Ancient Ones</a></td><td>Finland</td><td>2010–present</td></tr>
+          <tr id="band-occult-witchcraft"><td><a class="ext" href="https://en.wikipedia.org/wiki/Witchcraft_(band)">Witchcraft</a></td><td>Örebro, Sweden</td><td>2000–present</td></tr>
+          <tr id="band-occult-green-lung"><td><a class="ext" href="https://en.wikipedia.org/wiki/Green_Lung">Green Lung</a></td><td>South London, England</td><td>2017–present</td></tr>
+          <tr id="band-occult-purson"><td><a class="ext" href="https://en.wikipedia.org/wiki/Purson_(band)">Purson</a></td><td>London, England</td><td>2011–2017</td></tr>
+          <tr id="band-occult-jex-thoth"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jex_Thoth">Jex Thoth</a></td><td>Madison, Wisconsin, United States</td><td>2007-present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="post">Post</h2>
+    <p class="small">Post-metal. <a href="genres/post-metal.html">Read the Post page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-post-neurosis"><td><a class="ext" href="https://en.wikipedia.org/wiki/Neurosis_(band)">Neurosis</a><span class="multi">*</span></td><td>Oakland, California, U.S.</td><td>1985–present (hiatus: 2019–2024)</td></tr>
+          <tr id="band-post-isis"><td><a class="ext" href="https://en.wikipedia.org/wiki/Isis_(band)">Isis</a></td><td>Boston, Massachusetts, U.S.</td><td>1997–2010, 2018</td></tr>
+          <tr id="band-post-cult-of-luna"><td><a class="ext" href="https://en.wikipedia.org/wiki/Cult_of_Luna">Cult of Luna</a></td><td>Umeå, Sweden</td><td>1998–present</td></tr>
+          <tr id="band-post-pelican"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pelican_(band)">Pelican</a></td><td>Chicago, Illinois, U.S.</td><td>2001–present</td></tr>
+          <tr id="band-post-godflesh"><td><a class="ext" href="https://en.wikipedia.org/wiki/Godflesh">Godflesh</a></td><td>Birmingham, England</td><td>1988–2002, 2009–present</td></tr>
+          <tr id="band-post-jesu"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jesu_(band)">Jesu</a></td><td>Abergele, Wales</td><td>2003–present</td></tr>
+          <tr id="band-post-russian-circles"><td><a class="ext" href="https://en.wikipedia.org/wiki/Russian_Circles">Russian Circles</a></td><td>Chicago, Illinois, U.S.</td><td>2004–present</td></tr>
+          <tr id="band-post-rosetta"><td><a class="ext" href="https://en.wikipedia.org/wiki/Rosetta_(band)">Rosetta</a></td><td>Philadelphia, Pennsylvania, U.S.</td><td>2003–present</td></tr>
+          <tr id="band-post-alcest"><td><a class="ext" href="https://en.wikipedia.org/wiki/Alcest">Alcest</a></td><td>Bagnols-sur-Cèze, France</td><td>2000–present</td></tr>
+          <tr id="band-post-deafheaven"><td><a class="ext" href="https://en.wikipedia.org/wiki/Deafheaven">Deafheaven</a></td><td>San Francisco, California, U.S.</td><td>2010–present</td></tr>
+          <tr id="band-post-baroness"><td><a class="ext" href="https://en.wikipedia.org/wiki/Baroness_(band)">Baroness</a><span class="multi">*</span></td><td>Savannah, Georgia, U.S.</td><td>2003–present</td></tr>
+          <tr id="band-post-mastodon"><td><a class="ext" href="https://en.wikipedia.org/wiki/Mastodon_(band)">Mastodon</a><span class="multi">*</span></td><td>Atlanta, Georgia, U.S.</td><td>2000–present</td></tr>
+          <tr id="band-post-sumac"><td><a class="ext" href="https://en.wikipedia.org/wiki/Sumac_(band)">Sumac</a></td><td>Vancouver, British Columbia, Canada; Vashon, Washington, USA</td><td>2014–present</td></tr>
+          <tr id="band-post-elder"><td><a class="ext" href="https://en.wikipedia.org/wiki/Elder_(band)">Elder</a><span class="multi">*</span></td><td>Massachusetts, U.S.</td><td>2006–present</td></tr>
+          <tr id="band-post-amenra"><td><a class="ext" href="https://en.wikipedia.org/wiki/Amenra">Amenra</a></td><td>Kortrijk, West Flanders, Belgium</td><td>1999–present</td></tr>
+          <tr id="band-post-old-man-gloom"><td><a class="ext" href="https://en.wikipedia.org/wiki/Old_Man_Gloom">Old Man Gloom</a></td><td>Santa Fe, New Mexico, U.S.</td><td>1999–present</td></tr>
+          <tr id="band-post-fugazi"><td><a class="ext" href="https://en.wikipedia.org/wiki/Fugazi">Fugazi</a></td><td>Washington, D.C., U.S.</td><td>1986–2003</td></tr>
+          <tr id="band-post-quicksand"><td><a class="ext" href="https://en.wikipedia.org/wiki/Quicksand_(American_band)">Quicksand</a></td><td>New York City, New York, U.S.</td><td>1990–1995, 1997–1999, 2012–present</td></tr>
+          <tr id="band-post-helmet"><td><a class="ext" href="https://en.wikipedia.org/wiki/Helmet_(band)">Helmet</a></td><td>New York City, U.S.</td><td>1989–1998, 2004–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="progressive">Progressive</h2>
+    <p class="small">Progressive rock and metal. <a href="genres/progressive-rock.html">Read the Progressive page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-progressive-king-crimson"><td><a class="ext" href="https://en.wikipedia.org/wiki/King_Crimson">King Crimson</a></td><td>London, England</td><td>1968–1974, 1981–1984, 1994–2008, 2013…</td></tr>
+          <tr id="band-progressive-yes"><td><a class="ext" href="https://en.wikipedia.org/wiki/Yes_(band)">Yes</a></td><td>London, England</td><td>1968–1981, 1983–2004, 2009–present</td></tr>
+          <tr id="band-progressive-genesis"><td><a class="ext" href="https://en.wikipedia.org/wiki/Genesis_(band)">Genesis</a></td><td>Godalming, Surrey, England</td><td>1967–2000, 2002, 2006–2007, 2020–2022</td></tr>
+          <tr id="band-progressive-jethro-tull"><td><a class="ext" href="https://en.wikipedia.org/wiki/Jethro_Tull_(band)">Jethro Tull</a></td><td>Blackpool, Lancashire, England</td><td>1967–2011, 2017–present</td></tr>
+          <tr id="band-progressive-emerson-lake-palmer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Emerson,_Lake_&_Palmer">Emerson, Lake &amp; Palmer</a></td><td>London, England</td><td>1970–1979, 1990–1999, 2010</td></tr>
+          <tr id="band-progressive-rush"><td><a class="ext" href="https://en.wikipedia.org/wiki/Rush_(band)">Rush</a></td><td>Toronto, Ontario, Canada</td><td>—</td></tr>
+          <tr id="band-progressive-pink-floyd"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pink_Floyd">Pink Floyd</a><span class="multi">*</span></td><td>London, England</td><td>1965–1994, 2005, 2007, 2013–2014, 2022</td></tr>
+          <tr id="band-progressive-queensr-che"><td><a class="ext" href="https://en.wikipedia.org/wiki/Queensrÿche">Queensrÿche</a></td><td>Bellevue, Washington, U.S.</td><td>1980–present</td></tr>
+          <tr id="band-progressive-fates-warning"><td><a class="ext" href="https://en.wikipedia.org/wiki/Fates_Warning">Fates Warning</a></td><td>Hartford, Connecticut, U.S.</td><td>1982–present</td></tr>
+          <tr id="band-progressive-dream-theater"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dream_Theater">Dream Theater</a></td><td>Boston, Massachusetts</td><td>1985–present</td></tr>
+          <tr id="band-progressive-tool"><td><a class="ext" href="https://en.wikipedia.org/wiki/Tool_(band)">Tool</a></td><td>Los Angeles, California, U.S.</td><td>1990–present</td></tr>
+          <tr id="band-progressive-opeth"><td><a class="ext" href="https://en.wikipedia.org/wiki/Opeth">Opeth</a></td><td>Stockholm, Sweden</td><td>1990–present</td></tr>
+          <tr id="band-progressive-yob"><td><a class="ext" href="https://en.wikipedia.org/wiki/Yob_(band)">Yob</a><span class="multi">*</span></td><td>Eugene, Oregon, U.S.</td><td>1996–2006, 2008–present</td></tr>
+          <tr id="band-progressive-elder"><td><a class="ext" href="https://en.wikipedia.org/wiki/Elder_(band)">Elder</a><span class="multi">*</span></td><td>Massachusetts, U.S.</td><td>2006–present</td></tr>
+          <tr id="band-progressive-pallbearer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pallbearer_(band)">Pallbearer</a><span class="multi">*</span></td><td>Little Rock, Arkansas, U.S.</td><td>2008–present</td></tr>
+          <tr id="band-progressive-mastodon"><td><a class="ext" href="https://en.wikipedia.org/wiki/Mastodon_(band)">Mastodon</a><span class="multi">*</span></td><td>Atlanta, Georgia, U.S.</td><td>2000–present</td></tr>
+          <tr id="band-progressive-porcupine-tree"><td><a class="ext" href="https://en.wikipedia.org/wiki/Porcupine_Tree">Porcupine Tree</a></td><td>Hemel Hempstead, Hertfordshire, England</td><td>1987–2010, 2021–present</td></tr>
+          <tr id="band-progressive-between-the-buried-and-me"><td><a class="ext" href="https://en.wikipedia.org/wiki/Between_the_Buried_and_Me">Between the Buried and Me</a></td><td>Raleigh, North Carolina, U.S.</td><td>2000–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="sludge">Sludge</h2>
+    <p class="small">Sludge metal. <a href="genres/sludge-metal.html">Read the Sludge page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-sludge-melvins"><td><a class="ext" href="https://en.wikipedia.org/wiki/Melvins">Melvins</a></td><td>Montesano, Washington, U.S.</td><td>1983–present</td></tr>
+          <tr id="band-sludge-eyehategod"><td><a class="ext" href="https://en.wikipedia.org/wiki/Eyehategod">Eyehategod</a></td><td>New Orleans, Louisiana, U.S.</td><td>1988–present</td></tr>
+          <tr id="band-sludge-crowbar"><td><a class="ext" href="https://en.wikipedia.org/wiki/Crowbar_(American_band)">Crowbar</a></td><td>New Orleans, Louisiana, U.S.</td><td>1990–present</td></tr>
+          <tr id="band-sludge-acid-bath"><td><a class="ext" href="https://en.wikipedia.org/wiki/Acid_Bath">Acid Bath</a></td><td>Houma, Louisiana, U.S.</td><td>1991–1997, 2024–present</td></tr>
+          <tr id="band-sludge-down"><td><a class="ext" href="https://en.wikipedia.org/wiki/Down_(band)">Down</a></td><td>New Orleans, Louisiana, U.S.</td><td>1991–present</td></tr>
+          <tr id="band-sludge-soilent-green"><td><a class="ext" href="https://en.wikipedia.org/wiki/Soilent_Green">Soilent Green</a></td><td>New Orleans, Louisiana, U.S.</td><td>1988–present</td></tr>
+          <tr id="band-sludge-exhorder"><td><a class="ext" href="https://en.wikipedia.org/wiki/Exhorder">Exhorder</a></td><td>New Orleans, Louisiana, U.S.</td><td>1986–1994, 2008–2011, 2017–present</td></tr>
+          <tr id="band-sludge-neurosis"><td><a class="ext" href="https://en.wikipedia.org/wiki/Neurosis_(band)">Neurosis</a><span class="multi">*</span></td><td>Oakland, California, U.S.</td><td>1985–present (hiatus: 2019–2024)</td></tr>
+          <tr id="band-sludge-grief"><td><a class="ext" href="https://en.wikipedia.org/wiki/Grief_(band)">Grief</a></td><td>Boston, Massachusetts, U.S.</td><td>1991–2001, 2005–2006, 2008–2009</td></tr>
+          <tr id="band-sludge-dystopia"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dystopia_(band)">Dystopia</a></td><td>Orange County, California, U.S.</td><td>1991–2008</td></tr>
+          <tr id="band-sludge-high-on-fire"><td><a class="ext" href="https://en.wikipedia.org/wiki/High_on_Fire">High on Fire</a></td><td>Oakland, California, U.S.</td><td>1998–present</td></tr>
+          <tr id="band-sludge-weedeater"><td><a class="ext" href="https://en.wikipedia.org/wiki/Weedeater_(band)">Weedeater</a><span class="multi">*</span></td><td>Wilmington, North Carolina, U.S.</td><td>1998–present</td></tr>
+          <tr id="band-sludge-bongzilla"><td><a class="ext" href="https://en.wikipedia.org/wiki/Bongzilla">Bongzilla</a><span class="multi">*</span></td><td>Madison, Wisconsin, U.S.</td><td>1995–2009, 2015–present</td></tr>
+          <tr id="band-sludge-mastodon"><td><a class="ext" href="https://en.wikipedia.org/wiki/Mastodon_(band)">Mastodon</a><span class="multi">*</span></td><td>Atlanta, Georgia, U.S.</td><td>2000–present</td></tr>
+          <tr id="band-sludge-baroness"><td><a class="ext" href="https://en.wikipedia.org/wiki/Baroness_(band)">Baroness</a><span class="multi">*</span></td><td>Savannah, Georgia, U.S.</td><td>2003–present</td></tr>
+          <tr id="band-sludge-kylesa"><td><a class="ext" href="https://en.wikipedia.org/wiki/Kylesa">Kylesa</a></td><td>Savannah, Georgia, U.S.</td><td>2001–2016, 2024–present</td></tr>
+          <tr id="band-sludge-torche"><td><a class="ext" href="https://en.wikipedia.org/wiki/Torche_(band)">Torche</a></td><td>Miami, Florida, U.S.</td><td>2004–2022, 2025-present</td></tr>
+          <tr id="band-sludge-iron-monkey"><td><a class="ext" href="https://en.wikipedia.org/wiki/Iron_Monkey_(band)">Iron Monkey</a></td><td>Nottingham, England</td><td>1994–1999, 2017–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="space">Space</h2>
+    <p class="small">Space rock. <a href="genres/space-rock.html">Read the Space page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-space-hawkwind"><td><a class="ext" href="https://en.wikipedia.org/wiki/Hawkwind">Hawkwind</a><span class="multi">*</span></td><td>Ladbroke Grove, London, England</td><td>1969–present</td></tr>
+          <tr id="band-space-pink-floyd"><td><a class="ext" href="https://en.wikipedia.org/wiki/Pink_Floyd">Pink Floyd</a><span class="multi">*</span></td><td>London, England</td><td>1965–1994, 2005, 2007, 2013–2014, 2022</td></tr>
+          <tr id="band-space-gong"><td><a class="ext" href="https://en.wikipedia.org/wiki/Gong_(band)">Gong</a></td><td>Paris, France</td><td>1967–1968, 1969–1978, 1990, 1992–2001…</td></tr>
+          <tr id="band-space-amon-d-l-ii"><td><a class="ext" href="https://en.wikipedia.org/wiki/Amon_Düül_II">Amon Düül II</a></td><td>Munich, Bavaria, Germany</td><td>1968–1981, 1995, 2010–present</td></tr>
+          <tr id="band-space-nektar"><td><a class="ext" href="https://en.wikipedia.org/wiki/Nektar">Nektar</a></td><td>Hamburg, West Germany</td><td>1969–1978, 1979–1982, 2000–2016, 2019…</td></tr>
+          <tr id="band-space-spacemen-3"><td><a class="ext" href="https://en.wikipedia.org/wiki/Spacemen_3">Spacemen 3</a></td><td>Rugby, Warwickshire, England</td><td>1982–1991</td></tr>
+          <tr id="band-space-spiritualized"><td><a class="ext" href="https://en.wikipedia.org/wiki/Spiritualized">Spiritualized</a></td><td>Rugby, England</td><td>1990–present</td></tr>
+          <tr id="band-space-ozric-tentacles"><td><a class="ext" href="https://en.wikipedia.org/wiki/Ozric_Tentacles">Ozric Tentacles</a></td><td>Somerset, England</td><td>1983–present</td></tr>
+          <tr id="band-space-earthless"><td><a class="ext" href="https://en.wikipedia.org/wiki/Earthless">Earthless</a><span class="multi">*</span></td><td>San Diego, California, U.S.</td><td>2001–present</td></tr>
+          <tr id="band-space-slift"><td><a class="ext" href="https://en.wikipedia.org/wiki/Slift">Slift</a></td><td>Toulouse, France</td><td>2016–present</td></tr>
+          <tr id="band-space-yuri-gagarin"><td><a class="ext" href="https://en.wikipedia.org/wiki/Yuri_Gagarin_(band)">Yuri Gagarin</a></td><td>Gothenburg, Sweden</td><td>2012–present</td></tr>
+          <tr id="band-space-white-hills"><td><a class="ext" href="https://en.wikipedia.org/wiki/White_Hills_(band)">White Hills</a></td><td>New York City, New York, United States</td><td>Mid-2000s – present</td></tr>
+          <tr id="band-space-dead-meadow"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dead_Meadow">Dead Meadow</a><span class="multi">*</span></td><td>Washington, D.C., United States</td><td>1998–present</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="stoner">Stoner</h2>
+    <p class="small">Stoner rock. <a href="genres/stoner-rock.html">Read the Stoner page &rarr;</a></p>
+    <table class="wikitable">
+      <thead><tr><th>Band</th><th>Origin</th><th>Years active</th></tr></thead>
+      <tbody>
+          <tr id="band-stoner-kyuss"><td><a class="ext" href="https://en.wikipedia.org/wiki/Kyuss">Kyuss</a><span class="multi">*</span></td><td>Palm Desert, California, U.S.</td><td>1987–1995</td></tr>
+          <tr id="band-stoner-sleep"><td><a class="ext" href="https://en.wikipedia.org/wiki/Sleep_(band)">Sleep</a><span class="multi">*</span></td><td>San Jose, California, U.S.</td><td>1990–1998, 2009–present</td></tr>
+          <tr id="band-stoner-fu-manchu"><td><a class="ext" href="https://en.wikipedia.org/wiki/Fu_Manchu_(band)">Fu Manchu</a><span class="multi">*</span></td><td>Orange County, California, U.S.</td><td>1985–present</td></tr>
+          <tr id="band-stoner-monster-magnet"><td><a class="ext" href="https://en.wikipedia.org/wiki/Monster_Magnet">Monster Magnet</a></td><td>Red Bank, New Jersey, U.S.</td><td>1989–present</td></tr>
+          <tr id="band-stoner-queens-of-the-stone-age"><td><a class="ext" href="https://en.wikipedia.org/wiki/Queens_of_the_Stone_Age">Queens of the Stone Age</a><span class="multi">*</span></td><td>Palm Desert, California, U.S.</td><td>1996–present</td></tr>
+          <tr id="band-stoner-clutch"><td><a class="ext" href="https://en.wikipedia.org/wiki/Clutch_(band)">Clutch</a></td><td>Germantown, Maryland, U.S.</td><td>1991–present</td></tr>
+          <tr id="band-stoner-orange-goblin"><td><a class="ext" href="https://en.wikipedia.org/wiki/Orange_Goblin">Orange Goblin</a></td><td>London, England</td><td>1995–2025</td></tr>
+          <tr id="band-stoner-acid-king"><td><a class="ext" href="https://en.wikipedia.org/wiki/Acid_King_(band)">Acid King</a><span class="multi">*</span></td><td>San Francisco, California, U.S.</td><td>1993–present</td></tr>
+          <tr id="band-stoner-earthless"><td><a class="ext" href="https://en.wikipedia.org/wiki/Earthless">Earthless</a><span class="multi">*</span></td><td>San Diego, California, U.S.</td><td>2001–present</td></tr>
+          <tr id="band-stoner-truckfighters"><td><a class="ext" href="https://en.wikipedia.org/wiki/Truckfighters">Truckfighters</a><span class="multi">*</span></td><td>Örebro, Sweden</td><td>2001–2018, 2019–present</td></tr>
+          <tr id="band-stoner-dozer"><td><a class="ext" href="https://en.wikipedia.org/wiki/Dozer_(band)">Dozer</a></td><td>Borlänge, Sweden</td><td>1995–present</td></tr>
+          <tr id="band-stoner-greenleaf"><td><a class="ext" href="https://en.wikipedia.org/wiki/Greenleaf_(band)">Greenleaf</a></td><td>Borlänge, Sweden</td><td>1999–present</td></tr>
+          <tr id="band-stoner-stoned-jesus"><td><a class="ext" href="https://en.wikipedia.org/wiki/Stoned_Jesus">Stoned Jesus</a></td><td>Kyiv, Ukraine</td><td>2009–present</td></tr>
+          <tr id="band-stoner-graveyard"><td><a class="ext" href="https://en.wikipedia.org/wiki/Graveyard_(band)">Graveyard</a></td><td>Gothenburg, Sweden</td><td>2006–2016, 2017–present</td></tr>
+          <tr id="band-stoner-kadavar"><td><a class="ext" href="https://en.wikipedia.org/wiki/Kadavar">Kadavar</a></td><td>Berlin, Germany</td><td>2010–present</td></tr>
+          <tr id="band-stoner-colour-haze"><td><a class="ext" href="https://en.wikipedia.org/wiki/Colour_Haze">Colour Haze</a></td><td>Munich, Germany</td><td>1994–present</td></tr>
+          <tr id="band-stoner-red-fang"><td><a class="ext" href="https://en.wikipedia.org/wiki/Red_Fang">Red Fang</a></td><td>Portland, Oregon, United States</td><td>2005–present</td></tr>
+          <tr id="band-stoner-the-sword"><td><a class="ext" href="https://en.wikipedia.org/wiki/The_Sword">The Sword</a></td><td>Austin, Texas, U.S.</td><td>2003–2022, 2024–present</td></tr>
+      </tbody>
+    </table>
+
+    <p class="small multi-note"><span class="multi">*</span> Placed under more than one genre; these scenes often blend together.</p>
+
+    <div class="callout">
+      <span class="label">Note on scope</span>
+      <p>These are curated selections, not exhaustive catalogues. For longer lists see Wikipedia’s <a class="ext" href="https://en.wikipedia.org/wiki/List_of_doom_metal_bands">List of doom metal bands</a>, <a class="ext" href="https://en.wikipedia.org/wiki/List_of_sludge_metal_bands">List of sludge metal bands</a> and <a class="ext" href="https://en.wikipedia.org/wiki/List_of_Palm_Desert_Scene_bands">List of Palm Desert Scene bands</a>.</p>
+    </div>
+
+    <h2 id="sources">Sources</h2>
+    <ol class="reflist">
+      <li>Band summaries, formation data and lead images: individual <em>Wikipedia</em> articles, under <a class="ext" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Each band name links to its own article.</li>
+    </ol>
+
+    <footer class="page-footer">
+      <p>Hominypedia, an information subdomain of <a class="ext" href="https://www.hominyhouse.com">Hominy House</a>. Adapted from Wikipedia under <a class="ext" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Last edited 15 October 2026.</p>
+    </footer>
+
+  </main>
+</div>
+
+<!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <img class="footer__logo" src="../images/logo.png" alt="" />
+      <span>Hominy&nbsp;House</span>
+    </div>
+    <p class="footer__copy">&copy; Hominy House 2026</p>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="../reviews.html">Reviews</a>
+      <a href="../releases.html">Release Radar &amp; News</a>
+      <a href="../hominypedia.html">Hominypedia</a>
+      <a href="../index.html#subscribe">Join</a>
+    </nav>
+  </footer>
+  <script src="../site.js"></script>
+  <script>
+  (function () {
+    var tree = document.querySelector('.rail .rail-tree');
+    if (!tree) return;
+    tree.addEventListener('click', function (e) {
+      var btn = e.target.closest('.rail-plus');
+      if (!btn) return;
+      var list = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!list) return;
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.textContent = open ? '+' : '\u2212';
+      if (open) { list.setAttribute('hidden', ''); } else { list.removeAttribute('hidden'); }
+    });
+  })();
+  </script>
+</body>
+</html>
