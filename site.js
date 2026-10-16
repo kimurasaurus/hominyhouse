@@ -237,4 +237,109 @@
       else list.removeAttribute('hidden');
     });
   });
+
+  /* ---- Hominypedia rail: fold the menu boxes shut on phones ---- */
+  var foldBoxes = Array.prototype.slice.call(
+    document.querySelectorAll('.hp .rail details.rail-box')
+  );
+  if (foldBoxes.length) {
+    var phone = window.matchMedia('(max-width: 980px)');
+
+    /* Wide layout: always open. Phone: folded shut with the article on top. */
+    var syncFolds = function () {
+      foldBoxes.forEach(function (box) { box.open = !phone.matches; });
+    };
+    syncFolds();
+    if (phone.addEventListener) phone.addEventListener('change', syncFolds);
+    else if (phone.addListener) phone.addListener(syncFolds);
+
+    /* One box at a time on phones, so the menu never becomes a wall of links. */
+    foldBoxes.forEach(function (box) {
+      box.addEventListener('toggle', function () {
+        if (!phone.matches || !box.open) return;
+        foldBoxes.forEach(function (other) { if (other !== box) other.open = false; });
+      });
+      var sum = box.querySelector('summary');
+      if (sum) {
+        sum.addEventListener('keydown', function (e) {
+          if (!phone.matches && (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar')) {
+            e.preventDefault();
+          }
+        });
+      }
+    });
+  }
+
+  /* ---- Open a folded box when something inside it is linked to ----
+     Reference lists sit in a closed <details>; a citation in the body, or the
+     "References" entry in the sidebar, has to open it before the jump lands. */
+  var byHash = function (hash) {
+    var id = hash.slice(1);
+    try { id = decodeURIComponent(id); } catch (err) { /* keep it raw */ }
+    return document.getElementById(id);
+  };
+
+  var openEnclosingFolds = function (el) {
+    if (!el || !el.closest) return false;
+    var opened = false;
+    var fold = el.closest('details');
+    while (fold) {
+      if (!fold.open) { fold.open = true; opened = true; }
+      var parent = fold.parentElement;
+      fold = parent && parent.closest ? parent.closest('details') : null;
+    }
+    return opened;
+  };
+
+  document.addEventListener('click', function (e) {
+    var link = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!link) return;
+    var id = link.getAttribute('href');
+    if (!id || id.length < 2) return;
+
+    /* A <summary> opens or closes on any click inside it, links included, so a
+       "Back to Top" link sitting in a foldable heading must not be allowed to
+       unfold the list it belongs to. Do the jump ourselves instead. */
+    if (link.closest('summary')) {
+      e.preventDefault();
+      if (id === '#page-top') {
+        window.scrollTo(0, 0);
+      } else {
+        var inner = byHash(id);
+        if (inner) {
+          openEnclosingFolds(inner);
+          if (inner.scrollIntoView) inner.scrollIntoView();
+        }
+      }
+      return;
+    }
+
+    if (id === '#page-top') return;
+    var target = byHash(id);
+    if (!target) return;
+    if (openEnclosingFolds(target)) {
+      /* The entry was folded away when the browser worked out where to jump,
+         so cancel that and do the jump ourselves now that it is on screen. */
+      e.preventDefault();
+      if (target.scrollIntoView) target.scrollIntoView({ block: 'start' });
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', id);
+      }
+    }
+  });
+
+  var revealFromHash = function () {
+    if (window.location.hash.length < 2) return;
+    var target = byHash(window.location.hash);
+    if (!target) return;
+    if (openEnclosingFolds(target)) {
+      /* The fold was shut when the browser first tried to jump, so go again now
+         that the cited entry is on screen. */
+      window.requestAnimationFrame(function () {
+        if (target.scrollIntoView) target.scrollIntoView();
+      });
+    }
+  };
+  revealFromHash();
+  window.addEventListener('hashchange', revealFromHash);
 })();
