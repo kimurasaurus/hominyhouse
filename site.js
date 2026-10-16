@@ -127,8 +127,11 @@
       });
       var want = (btn.getAttribute('data-filter') || '*').toLowerCase();
       relItems.forEach(function (it) {
-        var g = (it.getAttribute('data-genre') || '').toLowerCase();
-        it.hidden = !(want === '*' || g.indexOf(want) !== -1);
+        var toks = (it.getAttribute('data-genre') || '')
+          .toLowerCase()
+          .split('/')
+          .map(function (s) { return s.trim(); });
+        it.hidden = !(want === '*' || toks.indexOf(want) !== -1);
       });
     });
   }
@@ -218,4 +221,20 @@
       if (el) so.observe(el);
     });
   }
+
+  /* ---- Rail disclosure rows: fold/unfold subsections (contents + band tree) ---- */
+  var rails = document.querySelectorAll('.rail');
+  rails.forEach(function (rail) {
+    rail.addEventListener('click', function (e) {
+      var btn = e.target.closest('.rail-plus');
+      if (!btn) return;
+      var list = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!list) return;
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.textContent = open ? '+' : '\u2212';
+      if (open) list.setAttribute('hidden', '');
+      else list.removeAttribute('hidden');
+    });
+  });
 })();

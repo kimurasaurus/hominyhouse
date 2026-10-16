@@ -23,11 +23,11 @@
     </a>
 
     <nav class="nav" aria-label="Primary">
-    <a class="nav__link" href="index.html"><span class="nav__hominy" aria-hidden="true"></span>Home</a>
-    <a class="nav__link nav__link--active" href="releases.html" aria-current="page"><span class="nav__hominy" aria-hidden="true"></span>Release Radar &amp; News</a>
-    <a class="nav__link" href="reviews.html"><span class="nav__hominy" aria-hidden="true"></span>Reviews</a>
-    <a class="nav__link" href="hominypedia.html"><span class="nav__hominy" aria-hidden="true"></span>Hominypedia</a>
-    <a class="nav__link" href="index.html#subscribe"><span class="nav__hominy" aria-hidden="true"></span>Join</a>
+    <a class="nav__link" href="index.html">Home</a>
+    <a class="nav__link nav__link--active" href="releases.html" aria-current="page">Release Radar &amp; News</a>
+    <a class="nav__link" href="reviews.html">Reviews</a>
+    <a class="nav__link" href="hominypedia.html">Hominypedia<span class="nav__new">New</span></a>
+    <a class="nav__link" href="index.html#subscribe">Join</a>
   </nav>
 
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -40,622 +40,619 @@
 <!-- ===== Release Radar ===== -->
     <section class="section reveal" id="releases">
       <div class="section__head">
-        <h2 class="section__title">Release Radar</h2>
-        <p class="section__sub">Fresh and forthcoming across stoner, doom, sludge, psych and the rest. Filter by lane, or scroll the lot.</p>
+        <h2 class="section__title">Release Radar</h2>
       </div>
 
       <div class="chips" role="group" aria-label="Filter releases by genre">
         <button class="chip is-on" type="button" data-filter="*">All</button>
-        <button class="chip" type="button" data-filter="Doom">Doom</button>
-        <button class="chip" type="button" data-filter="Stoner">Stoner</button>
-        <button class="chip" type="button" data-filter="Sludge">Sludge</button>
-        <button class="chip" type="button" data-filter="Psych">Psych</button>
-        <button class="chip" type="button" data-filter="Prog">Prog</button>
-        <button class="chip" type="button" data-filter="Death">Death</button>
-        <button class="chip" type="button" data-filter="Post-Metal">Post-Metal</button>
-        <button class="chip" type="button" data-filter="Space Rock">Space Rock</button>
-        <button class="chip" type="button" data-filter="Epic Doom">Epic Doom</button>
-        <button class="chip" type="button" data-filter="Speed">Speed</button>
-        <button class="chip" type="button" data-filter="Garage Doom">Garage Doom</button>
+        <button class="chip" type="button" data-filter="Death Metal">Death Metal</button>
+        <button class="chip" type="button" data-filter="Desert Rock">Desert Rock</button>
+        <button class="chip" type="button" data-filter="Doom Metal">Doom Metal</button>
         <button class="chip" type="button" data-filter="Occult Rock">Occult Rock</button>
-        <button class="chip" type="button" data-filter="Space">Space</button>
-        <button class="chip" type="button" data-filter="Drone">Drone</button>
-        <button class="chip" type="button" data-filter="Prog Death">Prog Death</button>
+        <button class="chip" type="button" data-filter="Post Metal">Post Metal</button>
+        <button class="chip" type="button" data-filter="Power Metal">Power Metal</button>
+        <button class="chip" type="button" data-filter="Progressive Metal">Progressive Metal</button>
+        <button class="chip" type="button" data-filter="Progressive Rock">Progressive Rock</button>
+        <button class="chip" type="button" data-filter="Psychedelic Rock">Psychedelic Rock</button>
+        <button class="chip" type="button" data-filter="Sludge Metal">Sludge Metal</button>
+        <button class="chip" type="button" data-filter="Space Rock">Space Rock</button>
+        <button class="chip" type="button" data-filter="Stoner Rock">Stoner Rock</button>
+        <button class="chip" type="button" data-filter="Thrash Metal">Thrash Metal</button>
       </div>
       <div class="releases" id="releases-list">
-        <a class="releases__item" data-genre="Psych" href="https://consequence.net/2026/09/king-buffalo-doomsayer-the-slick-and-the-dead/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Psychedelic Rock" href="https://consequence.net/2026/09/king-buffalo-doomsayer-the-slick-and-the-dead/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Dec 04 · 2026</time>
           <span class="releases__album">Doomsayer</span>
-                    <span class="releases__genre">Psych</span>
+                    <span class="releases__genre">Stoner Rock/Psychedelic Rock</span>
           <span class="releases__band">King Buffalo</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.decibelmagazine.com/2026/10/07/track-premiere-auralayer-tantalus/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.decibelmagazine.com/2026/10/07/track-premiere-auralayer-tantalus/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Dec 04 · 2026</time>
           <span class="releases__album">Into the Aura Lair</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Auralayer</span>
         </a>
-        <a class="releases__item" data-genre="Post-Metal" href="https://pelagic-records.com/product/rosetta-temporal-lapse-2lp-gatefold/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Post Metal/Sludge Metal" href="https://pelagic-records.com/product/rosetta-temporal-lapse-2lp-gatefold/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 27 · 2026</time>
           <span class="releases__album">Temporal Lapse</span>
-                    <span class="releases__genre">Post-Metal</span>
+                    <span class="releases__genre">Post Metal/Sludge Metal</span>
           <span class="releases__band">Rosetta</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://doomed-nation.com/us-stoner-doom-metal-band-ghost-pipe-premiere-first-single-wanderer-from-upcoming-album-the-awakening-out-november-20th-via-black-doomba-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://doomed-nation.com/us-stoner-doom-metal-band-ghost-pipe-premiere-first-single-wanderer-from-upcoming-album-the-awakening-out-november-20th-via-black-doomba-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 20 · 2026</time>
           <span class="releases__album">The Awakening</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Ghost Pipe</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://metalshockfinland.com/2026/09/28/fimir-announce-new-album-cosmic-heavy-doom-release-lyric-video-for-new-single-pain-of-the-world/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Space Rock" href="https://metalshockfinland.com/2026/09/28/fimir-announce-new-album-cosmic-heavy-doom-release-lyric-video-for-new-single-pain-of-the-world/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 20 · 2026</time>
           <span class="releases__album">Cosmic Heavy Doom</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Space Rock</span>
           <span class="releases__band">FIMIR</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://doomed-nation.com/uk-stoner-doom-metal-band-son-of-boar-return-with-second-studio-album-the-hand-that-reigns-on-november-20th-via-pale-wizard-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://doomed-nation.com/uk-stoner-doom-metal-band-son-of-boar-return-with-second-studio-album-the-hand-that-reigns-on-november-20th-via-pale-wizard-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 20 · 2026</time>
           <span class="releases__album">The Hand That Reigns</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Son Of Boar</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://doomed-nation.com/down-presents-new-single-and-music-video-the-myth-new-full-length-album-volume-v-to-see-release-on-november-20th-via-nuclear-blast-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Stoner Rock" href="https://doomed-nation.com/down-presents-new-single-and-music-video-the-myth-new-full-length-album-volume-v-to-see-release-on-november-20th-via-nuclear-blast-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 20 · 2026</time>
           <span class="releases__album">Volume V</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal/Stoner Rock</span>
           <span class="releases__band">Down</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://ghostcultmag.com/konvent-drop-their-single-and-video-firesky-ft-meejah-new-album-incoming/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Death Metal/Doom Metal" href="https://ghostcultmag.com/konvent-drop-their-single-and-video-firesky-ft-meejah-new-album-incoming/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Nov 06 · 2026</time>
           <span class="releases__album">Firesky</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Death Metal/Doom Metal</span>
           <span class="releases__band">Konvent</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Doom Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 30 · 2026</time>
           <span class="releases__album">Abyssian</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal/Doom Metal</span>
           <span class="releases__band">Black Royal</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 23 · 2026</time>
           <span class="releases__album">Salutations to the Cultivators</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Earthbong</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 23 · 2026</time>
           <span class="releases__album">Death Comes Twice</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Goat Major</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 23 · 2026</time>
           <span class="releases__album">Indecent Idols</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Fvneral Fvkk</span>
         </a>
-        <a class="releases__item" data-genre="Speed" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Thrash Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 23 · 2026</time>
           <span class="releases__album">Ascension Rock</span>
-                    <span class="releases__genre">Speed</span>
+                    <span class="releases__genre">Thrash Metal</span>
           <span class="releases__band">Hexecutioner</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Post-Metal" href="https://doomed-nation.com/german-progressive-post-metal-band-coal-crayon-premiere-new-single-and-music-video-torn-frail/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Progressive Metal/Post Metal" href="https://doomed-nation.com/german-progressive-post-metal-band-coal-crayon-premiere-new-single-and-music-video-torn-frail/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 16 · 2026</time>
           <span class="releases__album">Coal &amp; Crayon</span>
-                    <span class="releases__genre">Prog/Post-Metal</span>
+                    <span class="releases__genre">Progressive Metal/Post Metal</span>
           <span class="releases__band">Coal &amp; Crayon</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 16 · 2026</time>
           <span class="releases__album">Songs to Moon</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Stoned Jesus</span>
         </a>
-        <a class="releases__item" data-genre="Sludge/Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 16 · 2026</time>
           <span class="releases__album">Blood That I Spill Turns to Fire</span>
-                    <span class="releases__genre">Sludge/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Firebreather</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 14 · 2026</time>
           <span class="releases__album">Consumed by the Grave</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Soulers</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Sludge" href="https://www.suffermagazine.com/news/margarita-paris-doom-shoegaze-sludge-trio-release-debut-album-abysses-of-melancholia-via-electric-valley-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Sludge Metal" href="https://www.suffermagazine.com/news/margarita-paris-doom-shoegaze-sludge-trio-release-debut-album-abysses-of-melancholia-via-electric-valley-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Abysses of Melancholia</span>
-                    <span class="releases__genre">Doom/Sludge</span>
+                    <span class="releases__genre">Doom Metal/Sludge Metal</span>
           <span class="releases__band">Margarita</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Demons Left to Roam</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Witchthroat Serpent</span>
         </a>
-        <a class="releases__item" data-genre="Epic Doom" href="https://metalterritory.com/thronehammer-slay-kill-erase-epic-doom-at-its-heaviest/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://metalterritory.com/thronehammer-slay-kill-erase-epic-doom-at-its-heaviest/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Slay Kill Erase</span>
-                    <span class="releases__genre">Epic Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Thronehammer</span>
         </a>
-        <a class="releases__item" data-genre="Psych" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Psychedelic Rock/Stoner Rock" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Farewell to All We've Lost</span>
-                    <span class="releases__genre">Psych</span>
+                    <span class="releases__genre">Psychedelic Rock/Stoner Rock</span>
           <span class="releases__band">Orbita</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Occult Rock" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">I - The Forge</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Occult Rock</span>
           <span class="releases__band">Crimson Coven</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Traumanaut</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Goblin Cock</span>
         </a>
-        <a class="releases__item" data-genre="Epic Doom" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Power Metal" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">Witch Wife in an Alien World</span>
-                    <span class="releases__genre">Epic Doom</span>
+                    <span class="releases__genre">Doom Metal/Power Metal</span>
           <span class="releases__band">Smoulder</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Sludge Metal" href="https://www.metal-archives.com/release/upcoming" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 09 · 2026</time>
           <span class="releases__album">People as Idiots &amp; Idiots as Leaders</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Doom Metal/Sludge Metal</span>
           <span class="releases__band">Desolat</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Post-Metal" href="https://doomed-nation.com/belgian-progressive-post-metal-band-hippotraktor-releases-new-full-length-album-annihilist-out-today-via-pelagic-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Progressive Metal/Post Metal" href="https://doomed-nation.com/belgian-progressive-post-metal-band-hippotraktor-releases-new-full-length-album-annihilist-out-today-via-pelagic-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 02 · 2026</time>
           <span class="releases__album">Annihilist</span>
-                    <span class="releases__genre">Prog/Post-Metal</span>
+                    <span class="releases__genre">Progressive Metal/Post Metal</span>
           <span class="releases__band">Hippotraktor</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Stoner" href="https://progrockjournal.com/news-progressive-stoner-doom-trio-spider-kitten-unveil-official-video-for-fast-queen-from-upcoming-album-god-dont-sleep/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://progrockjournal.com/news-progressive-stoner-doom-trio-spider-kitten-unveil-official-video-for-fast-queen-from-upcoming-album-god-dont-sleep/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 02 · 2026</time>
           <span class="releases__album">God Don't Sleep</span>
-                    <span class="releases__genre">Prog/Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Spider Kitten</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://progrockjournal.com/news-nashville-stoner-doom-metal-duo-materializer-uynveil-official-music-video-for-eight-minute-sonic-opus-unwind/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://progrockjournal.com/news-nashville-stoner-doom-metal-duo-materializer-uynveil-official-music-video-for-eight-minute-sonic-opus-unwind/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 02 · 2026</time>
           <span class="releases__album">As The Body Flies</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Materializer</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal" href="https://www.metal-collision.com/2026/09/26/new-metal-albums-october-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 02 · 2026</time>
           <span class="releases__album">Ocean of Black Thoughts</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal</span>
           <span class="releases__band">Clegane</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Space Rock" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Oct 02 · 2026</time>
           <span class="releases__album">Wasteland</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Space Rock</span>
           <span class="releases__band">Travo</span>
         </a>
-        <a class="releases__item" data-genre="Sludge/Doom" href="https://doomed-nation.com/canadian-sludge-doom-metal-trio-ethereal-tomb-presents-new-full-length-album-living-to-dream-again-out-now-via-bat-skull-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Doom Metal" href="https://doomed-nation.com/canadian-sludge-doom-metal-trio-ethereal-tomb-presents-new-full-length-album-living-to-dream-again-out-now-via-bat-skull-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 25 · 2026</time>
           <span class="releases__album">Living To Dream Again</span>
-                    <span class="releases__genre">Sludge/Doom</span>
+                    <span class="releases__genre">Sludge Metal/Doom Metal</span>
           <span class="releases__band">Ethereal Tomb</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Doom" href="https://srarecords.bandcamp.com/album/cassandra-prophet-of-doom" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://srarecords.bandcamp.com/album/cassandra-prophet-of-doom" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 18 · 2026</time>
           <span class="releases__album">Cassandra, Prophet of Doom</span>
-                    <span class="releases__genre">Prog/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Stinking Lizaveta</span>
         </a>
-        <a class="releases__item" data-genre="Psych/Doom" href="https://theobelisk.net/obelisk/2026/07/20/uncle-acid-shapes-of-midnight-release" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Psychedelic Rock/Doom Metal" href="https://theobelisk.net/obelisk/2026/07/20/uncle-acid-shapes-of-midnight-release" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 18 · 2026</time>
           <span class="releases__album">Shapes of Midnight</span>
-                    <span class="releases__genre">Psych/Doom</span>
+                    <span class="releases__genre">Psychedelic Rock/Doom Metal</span>
           <span class="releases__band">Uncle Acid &amp; the Deadbeats</span>
         </a>
-        <a class="releases__item" data-genre="Garage Doom" href="https://doomed-nation.com/scuzz-n-fuzz-garage-doomers-lagoon-announce-new-album-forget-what-you-heard-out-september-18th-via-interstellar-smoke-records-evil-noise-recordings/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Psychedelic Rock" href="https://doomed-nation.com/scuzz-n-fuzz-garage-doomers-lagoon-announce-new-album-forget-what-you-heard-out-september-18th-via-interstellar-smoke-records-evil-noise-recordings/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 18 · 2026</time>
           <span class="releases__album">Forget What You Heard</span>
-                    <span class="releases__genre">Garage Doom</span>
+                    <span class="releases__genre">Doom Metal/Psychedelic Rock</span>
           <span class="releases__band">LáGoon</span>
         </a>
-        <a class="releases__item" data-genre="Space Rock" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Space Rock/Psychedelic Rock" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 18 · 2026</time>
           <span class="releases__album">Harmonic Mind</span>
-                    <span class="releases__genre">Space Rock</span>
+                    <span class="releases__genre">Space Rock/Psychedelic Rock</span>
           <span class="releases__band">Ozric Tentacles</span>
         </a>
-        <a class="releases__item" data-genre="Space Rock" href="https://creative-eclipse.com/2026/07/31/the-spacelords-uranus-omnibus-sanctus/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Space Rock/Psychedelic Rock" href="https://creative-eclipse.com/2026/07/31/the-spacelords-uranus-omnibus-sanctus/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 18 · 2026</time>
           <span class="releases__album">Uranus Omnibus Sanctus</span>
-                    <span class="releases__genre">Space Rock</span>
+                    <span class="releases__genre">Space Rock/Psychedelic Rock</span>
           <span class="releases__band">The Spacelords</span>
         </a>
-        <a class="releases__item" data-genre="Occult Rock" href="https://www.nuclearblast.com/blogs/news/green-lung-return-with-fourth-album-necropolitan-unveil-evil-in-this-house" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.nuclearblast.com/blogs/news/green-lung-return-with-fourth-album-necropolitan-unveil-evil-in-this-house" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 11 · 2026</time>
           <span class="releases__album">Necropolitan</span>
-                    <span class="releases__genre">Occult Rock</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Green Lung</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/08/27/new-metal-albums-september-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/08/27/new-metal-albums-september-2026-preview-of-100-upcoming-metal-releases" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 10 · 2026</time>
           <span class="releases__album">Let the Posers Fall!</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Cardinals Folly</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://doomed-nation.com/american-stoner-doom-legends-sleep-unleash-new-full-length-album-hempispheres-out-today-via-third-man-records/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://doomed-nation.com/american-stoner-doom-legends-sleep-unleash-new-full-length-album-hempispheres-out-today-via-third-man-records/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Sep 03 · 2026</time>
           <span class="releases__album">Hempispheres</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Sleep</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://everythingisnoise.net/reviews/10000-years-esox-lucifer/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://everythingisnoise.net/reviews/10000-years-esox-lucifer/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Aug 07 · 2026</time>
           <span class="releases__album">Esox Lucifer</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">10,000 Years</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jul 03 · 2026</time>
           <span class="releases__album">The Second Fall</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Nxmad</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Psychedelic Rock" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jul 03 · 2026</time>
           <span class="releases__album">(Des)</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Psychedelic Rock</span>
           <span class="releases__band">Troy the Band</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Psychedelic Rock" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jul 03 · 2026</time>
           <span class="releases__album">The Maze of Doom</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Psychedelic Rock</span>
           <span class="releases__band">Caravan of Souls</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-collision.com/2026/06/28/new-metal-albums-2026-week-27-june-29th-july-5th" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jul 01 · 2026</time>
           <span class="releases__album">Parts 11-15</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Soulers</span>
         </a>
-        <a class="releases__item" data-genre="Psych/Stoner" href="https://doomed-nation.com/german-psychedelic-stoner-rockers-kalamata-stream-new-album-zenosyne-out-now-via-copper-feast-records-made-of-stone-recordings/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Psychedelic Rock" href="https://doomed-nation.com/german-psychedelic-stoner-rockers-kalamata-stream-new-album-zenosyne-out-now-via-copper-feast-records-made-of-stone-recordings/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 26 · 2026</time>
           <span class="releases__album">Zenosyne</span>
-                    <span class="releases__genre">Psych/Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Psychedelic Rock</span>
           <span class="releases__band">Kalamata</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://progrockjournal.com/news-montana-doom-stoner-band-the-old-ones-unveil-official-full-stream-for-new-album-volume-ii-available-on-vinyl-and-digital/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://progrockjournal.com/news-montana-doom-stoner-band-the-old-ones-unveil-official-full-stream-for-new-album-volume-ii-available-on-vinyl-and-digital/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 26 · 2026</time>
           <span class="releases__album">Volume II</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">The Old Ones</span>
         </a>
-        <a class="releases__item" data-genre="Space Rock" href="https://hawkwindofficial.bandcamp.com/album/psychedelic-selection" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Space Rock/Psychedelic Rock" href="https://hawkwindofficial.bandcamp.com/album/psychedelic-selection" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 26 · 2026</time>
           <span class="releases__album">Psychedelic Selection</span>
-                    <span class="releases__genre">Space Rock</span>
+                    <span class="releases__genre">Space Rock/Psychedelic Rock</span>
           <span class="releases__band">Hawkwind</span>
         </a>
-        <a class="releases__item" data-genre="Psych/Stoner" href="https://doomed-nation.com/czech-psychedelic-stoner-rockers-undertong-present-their-self-titled-debut-album-available-now-on-all-major-streaming-services/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Psychedelic Rock" href="https://doomed-nation.com/czech-psychedelic-stoner-rockers-undertong-present-their-self-titled-debut-album-available-now-on-all-major-streaming-services/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 25 · 2026</time>
           <span class="releases__album">Undertong</span>
-                    <span class="releases__genre">Psych/Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Psychedelic Rock</span>
           <span class="releases__band">Undertong</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.nuclearblast.com/blogs/news/khemmis-announce-new-self-titled-album-out-june-12th" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.nuclearblast.com/blogs/news/khemmis-announce-new-self-titled-album-out-june-12th" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 12 · 2026</time>
           <span class="releases__album">Khemmis</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Khemmis</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://blacktusk.bandcamp.com/album/systems-of-solitude" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Stoner Rock" href="https://blacktusk.bandcamp.com/album/systems-of-solitude" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 10 · 2026</time>
           <span class="releases__album">Systems of Solitude</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal/Stoner Rock</span>
           <span class="releases__band">Black Tusk</span>
         </a>
-        <a class="releases__item" data-genre="Post-Metal" href="https://www.promos.againstpr.com/post-metal-sludge-doom-chullachaqui-epiphanic-perdition/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Post Metal/Sludge Metal" href="https://www.promos.againstpr.com/post-metal-sludge-doom-chullachaqui-epiphanic-perdition/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 05 · 2026</time>
           <span class="releases__album">Epiphanic Perdition</span>
-                    <span class="releases__genre">Post-Metal</span>
+                    <span class="releases__genre">Post Metal/Sludge Metal</span>
           <span class="releases__band">Chullachaqui</span>
         </a>
-        <a class="releases__item" data-genre="Psych/Space" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Space Rock/Psychedelic Rock" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jun 05 · 2026</time>
           <span class="releases__album">Fantasia</span>
-                    <span class="releases__genre">Psych/Space</span>
+                    <span class="releases__genre">Space Rock/Psychedelic Rock</span>
           <span class="releases__band">SLIFT</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Stoner" href="https://beholdtheelder.bandcamp.com/album/through-zero" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Progressive Rock/Stoner Rock" href="https://beholdtheelder.bandcamp.com/album/through-zero" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 29 · 2026</time>
           <span class="releases__album">Through Zero</span>
-                    <span class="releases__genre">Prog/Stoner</span>
+                    <span class="releases__genre">Progressive Rock/Stoner Rock</span>
           <span class="releases__band">Elder</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://monolord.bandcamp.com/album/neverending" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://monolord.bandcamp.com/album/neverending" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 29 · 2026</time>
           <span class="releases__album">Neverending</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Monolord</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 29 · 2026</time>
           <span class="releases__album">Projections</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Godthrymm</span>
         </a>
-        <a class="releases__item" data-genre="Prog" href="https://loudwire.com/2026-hard-rock-metal-album-release-calendar/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Progressive Rock" href="https://loudwire.com/2026-hard-rock-metal-album-release-calendar/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 15 · 2026</time>
           <span class="releases__album">Apocalypse</span>
-                    <span class="releases__genre">Prog</span>
+                    <span class="releases__genre">Progressive Rock</span>
           <span class="releases__band">Crown Lands</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 15 · 2026</time>
           <span class="releases__album">Gozu VI</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Gozu</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 15 · 2026</time>
           <span class="releases__album">Cycle</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Void Sinker</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 15 · 2026</time>
           <span class="releases__album">Nocturnes</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Angellore</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 12 · 2026</time>
           <span class="releases__album">Foamdrinker</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock</span>
           <span class="releases__band">We Follow the Earth</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 08 · 2026</time>
           <span class="releases__album">In Somnolent Ruin</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Draconian</span>
         </a>
-        <a class="releases__item" data-genre="Sludge/Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Sludge Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 08 · 2026</time>
           <span class="releases__album">Restless Spirit</span>
-                    <span class="releases__genre">Sludge/Doom</span>
+                    <span class="releases__genre">Doom Metal/Sludge Metal</span>
           <span class="releases__band">Restless Spirit</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 08 · 2026</time>
           <span class="releases__album">In Sorrow's Requie</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Motus Tenebrae</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 01 · 2026</time>
           <span class="releases__album">Forgeries Volume 1: 1972 - 1984</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal</span>
           <span class="releases__band">16</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 01 · 2026</time>
           <span class="releases__album">Beltane</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Brüle</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Thrash Metal" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 01 · 2026</time>
           <span class="releases__album">I Hail I</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal/Thrash Metal</span>
           <span class="releases__band">Lair of the Minotaur</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/04/26/new-metal-albums-may-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">May 01 · 2026</time>
           <span class="releases__album">Mother Iron Horse</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Mother Iron Horse</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 24 · 2026</time>
           <span class="releases__album">The Devil Doesn't Burn</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Witch Piss</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 24 · 2026</time>
           <span class="releases__album">The Earth Is Breathing Beneath Me</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal</span>
           <span class="releases__band">Armed for Apocalypse</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 24 · 2026</time>
           <span class="releases__album">Stories from the Dark</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock</span>
           <span class="releases__band">White Tundra</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 20 · 2026</time>
           <span class="releases__album">Existential Decay</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Weaving Shadows</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Stoner Rock" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 20 · 2026</time>
           <span class="releases__album">Stoned Villains</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Doom Metal/Stoner Rock</span>
           <span class="releases__band">Tons</span>
         </a>
-        <a class="releases__item" data-genre="Doom" href="https://www.newreleasesnow.com/new-doom-metal-songs" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.newreleasesnow.com/new-doom-metal-songs" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 17 · 2026</time>
           <span class="releases__album">The Bestiary</span>
-                    <span class="releases__genre">Doom</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Castle Rat</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://fuzzoramarecords1.bandcamp.com/album/masterflow" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock" href="https://fuzzoramarecords1.bandcamp.com/album/masterflow" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 10 · 2026</time>
           <span class="releases__album">Masterflow</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock</span>
           <span class="releases__band">Truckfighters</span>
         </a>
-        <a class="releases__item" data-genre="Sludge" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Sludge Metal/Doom Metal" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 10 · 2026</time>
           <span class="releases__album">Through the Hourglass</span>
-                    <span class="releases__genre">Sludge</span>
+                    <span class="releases__genre">Sludge Metal/Doom Metal</span>
           <span class="releases__band">Witch Ripper</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Sludge" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Sludge Metal" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 10 · 2026</time>
           <span class="releases__album">Loon</span>
-                    <span class="releases__genre">Stoner/Sludge</span>
+                    <span class="releases__genre">Stoner Rock/Sludge Metal</span>
           <span class="releases__band">Abrams</span>
         </a>
-        <a class="releases__item" data-genre="Drone" href="https://www.newreleasesnow.com/new-doom-metal-songs" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal" href="https://www.newreleasesnow.com/new-doom-metal-songs" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 03 · 2026</time>
           <span class="releases__album">Sunn O)))</span>
-                    <span class="releases__genre">Drone</span>
+                    <span class="releases__genre">Doom Metal</span>
           <span class="releases__band">Sunn O)))</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://www.metal-collision.com/2026/03/25/new-metal-albums-april-2026" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Apr 03 · 2026</time>
           <span class="releases__album">The Sound of Absent Life</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">The Solitude</span>
         </a>
-        <a class="releases__item" data-genre="Psych" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Psychedelic Rock/Space Rock" href="https://rateyourmusic.com/charts/top/album/2026/g:space-rock/incl:live/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Mar 20 · 2026</time>
           <span class="releases__album">YourPrettyPlaceIsGoingToHell</span>
-                    <span class="releases__genre">Psych</span>
+                    <span class="releases__genre">Psychedelic Rock/Space Rock</span>
           <span class="releases__band">The Heads</span>
         </a>
-        <a class="releases__item" data-genre="Doom/Death" href="https://darkresonance.substack.com/p/doom-metal-highlights-of-2026-so" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Doom Metal/Death Metal" href="https://darkresonance.substack.com/p/doom-metal-highlights-of-2026-so" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Mar 20 · 2026</time>
           <span class="releases__album">Isle of Bliss</span>
-                    <span class="releases__genre">Doom/Death</span>
+                    <span class="releases__genre">Doom Metal/Death Metal</span>
           <span class="releases__band">Hanging Garden</span>
         </a>
-        <a class="releases__item" data-genre="Stoner" href="https://smallstone.bandcamp.com/album/generation-ship-endless-drift-through-infinity" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Desert Rock" href="https://smallstone.bandcamp.com/album/generation-ship-endless-drift-through-infinity" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Mar 06 · 2026</time>
           <span class="releases__album">Generation Ship: Endless Drift Through Infinity</span>
-                    <span class="releases__genre">Stoner</span>
+                    <span class="releases__genre">Stoner Rock/Desert Rock</span>
           <span class="releases__band">Desert Collider</span>
         </a>
-        <a class="releases__item" data-genre="Prog Death" href="https://loudwire.com/2026-hard-rock-metal-album-release-calendar/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Death Metal/Progressive Metal" href="https://loudwire.com/2026-hard-rock-metal-album-release-calendar/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Feb 27 · 2026</time>
           <span class="releases__album">Overspace &amp; Supertime</span>
-                    <span class="releases__genre">Prog Death</span>
+                    <span class="releases__genre">Death Metal/Progressive Metal</span>
           <span class="releases__band">Cryptic Shift</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Psych" href="https://everythingisnoise.net/reviews/weedpecker-v/" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Psychedelic Rock/Stoner Rock" href="https://everythingisnoise.net/reviews/weedpecker-v/" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Feb 27 · 2026</time>
           <span class="releases__album">V</span>
-                    <span class="releases__genre">Stoner/Psych</span>
+                    <span class="releases__genre">Psychedelic Rock/Stoner Rock</span>
           <span class="releases__band">Weedpecker</span>
         </a>
-        <a class="releases__item" data-genre="Prog/Psych" href="https://motorpsycho.bandcamp.com/album/the-gaia-ii-space-corps" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Progressive Rock/Psychedelic Rock" href="https://motorpsycho.bandcamp.com/album/the-gaia-ii-space-corps" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Feb 27 · 2026</time>
           <span class="releases__album">The Gaia II Space Corps</span>
-                    <span class="releases__genre">Prog/Psych</span>
+                    <span class="releases__genre">Progressive Rock/Psychedelic Rock</span>
           <span class="releases__band">Motorpsycho</span>
         </a>
-        <a class="releases__item" data-genre="Stoner/Doom" href="https://hazinglungs.bandcamp.com/album/the-great-mycelial-expansion" target="_blank" rel="noopener">
+        <a class="releases__item" data-genre="Stoner Rock/Doom Metal" href="https://hazinglungs.bandcamp.com/album/the-great-mycelial-expansion" target="_blank" rel="noopener">
           <span class="releases__hominy" aria-hidden="true"></span>
           <time class="releases__date">Jan 30 · 2026</time>
           <span class="releases__album">The Great Mycelial Expansion</span>
-                    <span class="releases__genre">Stoner/Doom</span>
+                    <span class="releases__genre">Stoner Rock/Doom Metal</span>
           <span class="releases__band">Hazing Lungs</span>
         </a>
       </div>

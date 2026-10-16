@@ -176,45 +176,64 @@ img { display: block; max-width: 100%; }
   gap: clamp(2px, 0.6vw, 8px);
 }
 
+/* Header nav links, styled as pills to match the Hominypedia sub-navigation. */
 .nav__link {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 0.9rem;
+  font-family: var(--font-display);
+  font-size: 0.86rem;
   font-weight: 500;
   white-space: nowrap;
   color: var(--text-dim);
-  padding: 8px 10px;
-  border-radius: 10px;
-  transition: color 0.25s var(--ease), background 0.25s var(--ease);
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: color 0.25s var(--ease), background 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+.nav__link:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--panel-line);
+}
+.nav__link--active,
+.nav__link[aria-current="page"] {
+  color: #0a0a0c;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  font-weight: 700;
+}
+.nav__link--active:hover,
+.nav__link[aria-current="page"]:hover {
+  color: #0a0a0c;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
 }
 
-/* Small glowing hominy kernel used as a nav marker */
-.nav__hominy {
-  flex: none;
-  width: 12px;
-  height: 10px;
-  border-radius: 56% 44% 52% 48% / 62% 58% 42% 38%;
-  background: radial-gradient(circle at 34% 28%, #fff8e6 0%, #ffd479 50%, #ff9a2e 100%);
-  box-shadow: 0 0 6px rgba(255, 176, 32, 0.8), 0 0 13px rgba(255, 90, 31, 0.5);
-  animation: hominyWiggle 2.8s ease-in-out infinite;
-  transition: transform 0.3s var(--ease);
-}
-.nav__link:hover .nav__hominy { transform: scale(1.2); }
-
-.nav__link::after {
-  content: "";
+/* ---- "New" flag on the Hominypedia nav button ---- */
+.nav__new {
   position: absolute;
-  left: 10px; right: 10px; bottom: 4px;
-  height: 1px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.35s var(--ease);
+  top: -6px;
+  right: -7px;
+  padding: 1px 5px;
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #0a0a0c;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px #0a0a0c, 0 2px 8px rgba(255, 90, 31, 0.45);
+  pointer-events: none;
 }
-.nav__link:hover { color: var(--text); }
-.nav__link:hover::after { transform: scaleX(1); }
+.nav__link[aria-current="page"] .nav__new {
+  color: var(--accent-2);
+  background: #0a0a0c;
+  box-shadow: 0 0 0 2px rgba(226, 87, 28, 0.85);
+}
 
 .nav__link--cta {
   position: relative;
@@ -466,7 +485,7 @@ main {
 
 .hero {
   position: relative;
-  min-height: calc(100svh - var(--banner-h));
+  min-height: min(calc(100svh - var(--banner-h)), 680px);
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   align-items: center;
@@ -476,9 +495,30 @@ main {
   padding: clamp(40px, 8vh, 90px) clamp(20px, 5vw, 44px) clamp(24px, 4vh, 52px);
 }
 
-/* Homepage track chart: tucked directly under the hero, just below the
-   playlist embeds and the floating artwork on every viewport. */
-#tracklist { padding-top: clamp(16px, 2.5vw, 40px); }
+/* Homepage track chart: tucked up close under the hero, just below the playlist
+   embeds and the floating artwork. */
+#tracklist { padding-top: clamp(6px, 1.2vw, 16px); }
+
+/* Short intro blurb that sits above the Volume 1 track chart. */
+.mix-blurb {
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--panel-line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+.mix-blurb__label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+.mix-blurb p { margin: 0; color: var(--text-dim); }
 
 .hero__inner { max-width: 620px; }
 
@@ -1394,9 +1434,10 @@ main {
 
 .chart {
   width: 100%;
-  min-width: 720px;
+  min-width: 560px;
+  table-layout: auto;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   background: var(--panel);
   border: 1px solid var(--panel-line);
   border-radius: 12px;
@@ -1404,9 +1445,9 @@ main {
 }
 .chart th,
 .chart td {
-  padding: 11px 14px;
+  padding: 7px 12px;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
   border: 1px solid rgba(244, 190, 120, 0.12);
 }
 .chart thead th {
@@ -1429,9 +1470,14 @@ main {
   white-space: nowrap;
 }
 .chart__song { font-weight: 600; color: var(--text); }
-.chart__genre { white-space: nowrap; color: var(--accent-2); }
-.chart__link a { color: var(--accent-2); }
-.chart__link a:hover { color: #ffcf7a; text-decoration: underline; }
+.chart__album,
+.chart__artist { color: var(--text); }
+.chart__year {
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+  white-space: nowrap;
+}
 
 /* ============================================================
    Responsive
@@ -1510,9 +1556,7 @@ main {
    Built on the existing tokens: no palette change.
    ============================================================ */
 
-/* ---- Current page in the top nav ---- */
-.nav__link--active { color: var(--text); }
-.nav__link--active::after { transform: scaleX(1); }
+/* ---- Current page in the top nav (filled pill, styled with .nav__link) ---- */
 
 /* ---- Two-column layout: docked rail + content ---- */
 .layout {

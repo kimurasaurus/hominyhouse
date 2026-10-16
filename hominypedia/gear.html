@@ -25,11 +25,11 @@
     </a>
 
     <nav class="nav" aria-label="Primary">
-    <a class="nav__link" href="../index.html"><span class="nav__hominy" aria-hidden="true"></span>Home</a>
-    <a class="nav__link" href="../releases.html"><span class="nav__hominy" aria-hidden="true"></span>Release Radar &amp; News</a>
-    <a class="nav__link" href="../reviews.html"><span class="nav__hominy" aria-hidden="true"></span>Reviews</a>
-    <a class="nav__link nav__link--active" href="../hominypedia.html" aria-current="page"><span class="nav__hominy" aria-hidden="true"></span>Hominypedia</a>
-    <a class="nav__link" href="../index.html#subscribe"><span class="nav__hominy" aria-hidden="true"></span>Join</a>
+    <a class="nav__link" href="../index.html">Home</a>
+    <a class="nav__link" href="../releases.html">Release Radar &amp; News</a>
+    <a class="nav__link" href="../reviews.html">Reviews</a>
+    <a class="nav__link nav__link--active" href="../hominypedia.html" aria-current="page">Hominypedia<span class="nav__new">New</span></a>
+    <a class="nav__link" href="../index.html#subscribe">Join</a>
   </nav>
 
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -53,30 +53,53 @@
   <aside class="rail">
     <div class="rail-box">
       <h3>Contents</h3>
-      <ol>
-        <li><a href="#overview"><span class="num">1</span>Overview</a></li>
-        <li><a href="#instruments"><span class="num">2</span>Instruments</a></li>
-        <li><a href="#tunings"><span class="num">3</span>Tunings</a></li>
-        <li><a href="#amplifiers"><span class="num">4</span>Amplifiers</a></li>
-        <li><a href="#pedals"><span class="num">5</span>Effects Pedals</a></li>
-        <li><a href="#sources"><span class="num">6</span>Sources</a></li>
+      <ol class="rail-toc">
+        <li><a href="#page-top">(Top)</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li class="rail-toc__parent">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="toc-1" aria-label="Show Instruments subsections">+</button><a href="#instruments">Instruments</a></div>
+          <ol id="toc-1" class="rail-toc__sub" hidden>
+            <li><a href="#guitars">Guitars</a></li>
+            <li><a href="#basses">Basses</a></li>
+            <li><a href="#drums-and-percussion">Drums and percussion</a></li>
+            <li><a href="#keyboards-organs-and-synthesizers">Keyboards, organs and synthesizers</a></li>
+          </ol>
+        </li>
+        <li class="rail-toc__parent">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="toc-2" aria-label="Show Tunings subsections">+</button><a href="#tunings">Tunings</a></div>
+          <ol id="toc-2" class="rail-toc__sub" hidden>
+            <li><a href="#down-tuning">Down-tuning</a></li>
+            <li><a href="#standard-based-lowered-tunings">Standard-based lowered tunings</a></li>
+            <li><a href="#drop-tunings">Drop tunings</a></li>
+            <li><a href="#gear-that-follows-the-tuning">Gear that follows the tuning</a></li>
+            <li><a href="#reference-table">Reference table</a></li>
+            <li><a href="#examples-in-the-wild">Examples in the wild</a></li>
+          </ol>
+        </li>
+        <li class="rail-toc__parent">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="toc-3" aria-label="Show Amplifiers subsections">+</button><a href="#amplifiers">Amplifiers</a></div>
+          <ol id="toc-3" class="rail-toc__sub" hidden>
+            <li><a href="#what-a-guitar-amplifier-does">What a guitar amplifier does</a></li>
+            <li><a href="#british-amplifiers">British amplifiers</a></li>
+            <li><a href="#american-amplifiers">American amplifiers</a></li>
+            <li><a href="#cabinets-and-speakers">Cabinets and speakers</a></li>
+            <li><a href="#the-loudness-and-headroom-arms-race">The loudness and headroom arms race</a></li>
+          </ol>
+        </li>
+        <li class="rail-toc__parent">
+          <div class="rail-genre__row"><button type="button" class="rail-plus" aria-expanded="false" aria-controls="toc-4" aria-label="Show Effects Pedals subsections">+</button><a href="#effects-pedals">Effects Pedals</a></div>
+          <ol id="toc-4" class="rail-toc__sub" hidden>
+            <li><a href="#fuzz">Fuzz</a></li>
+            <li><a href="#overdrive-and-treble-boosters">Overdrive and treble boosters</a></li>
+            <li><a href="#distortion">Distortion</a></li>
+            <li><a href="#wah-and-filters">Wah and filters</a></li>
+            <li><a href="#modulation">Modulation</a></li>
+            <li><a href="#delay-and-reverb">Delay and reverb</a></li>
+            <li><a href="#signal-chain-and-practical-notes">Signal chain and practical notes</a></li>
+          </ol>
+        </li>
+        <li><a href="#sources">Sources</a></li>
       </ol>
-    </div>
-    <div class="rail-box">
-      <h3>Explore a Genre</h3>
-      <ul>
-        <li><a href="genres/acid-rock.html">Acid</a></li>
-        <li><a href="genres/palm-desert-scene.html">Desert</a></li>
-        <li><a href="genres/doom-metal.html">Doom</a></li>
-        <li><a href="genres/psychedelic-rock.html">Psychedelic</a></li>
-        <li><a href="genres/melodic-death-metal.html">Melodic Death</a></li>
-        <li><a href="genres/occult-rock.html">Occult</a></li>
-        <li><a href="genres/post-metal.html">Post</a></li>
-        <li><a href="genres/progressive-rock.html">Progressive</a></li>
-        <li><a href="genres/sludge-metal.html">Sludge</a></li>
-        <li><a href="genres/space-rock.html">Space</a></li>
-        <li><a href="genres/stoner-rock.html">Stoner</a></li>
-      </ul>
     </div>
   </aside>
 
@@ -145,22 +168,22 @@
     <h2 id="instruments">Instruments</h2>
     <p>Across stoner, doom, sludge, desert, psychedelic, space, occult and progressive rock, the same core lineup does most of the work: electric guitar, electric bass and drums, with keyboards expanding the psychedelic and progressive end. What changes is how those instruments are tuned, amplified and played. The heavy side leans on down-tuned guitars through distorted amplifiers, while the psychedelic and progressive side leans on organs, tape keyboards and early synthesizers.</p>
 
-    <h3>Guitars</h3>
+    <h3 id="guitars">Guitars</h3>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Electric_guitar">electric guitar</a> is the defining instrument of every style here, used both for riffing rhythm and for lead lines. Two Gibson solid-bodies dominate the metal end. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gibson_Les_Paul">Gibson Les Paul</a></strong>, sold from 1952 with a solid mahogany body and a carved maple top, gained humbucking pickups in 1957; its 1958 to 1960 sunburst version was initially a commercial failure, but late-1960s players such as Peter Green, Jeff Beck, Paul Kossoff and Jimmy Page made it the sound of British blues rock. Page used a Les Paul, sold to him by Joe Walsh, for most Led Zeppelin recordings from the second album onward, through Marshall amplifiers. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gibson_SG">Gibson SG</a></strong>, introduced in 1961 as a thinner, double-cutaway redesign, became a hard rock cornerstone: Tony Iommi of Black Sabbath played a modified left-handed 1964 SG Special with P-90 pickups that he nicknamed Monkey, and Angus Young of AC/DC and Robby Krieger of the Doors are also closely associated with it.</p>
     <p>Fender's two commonest models approach the same genres from another angle. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Stratocaster">Fender Stratocaster</a></strong> (1954) is linked above all to Jimi Hendrix, whose feedback and effects work rewrote what the instrument could do, and to David Gilmour of Pink Floyd and Ritchie Blackmore of Deep Purple, who played Stratocasters almost exclusively from 1970. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Telecaster">Fender Telecaster</a></strong>, the first mass-produced, commercially successful solid-body electric guitar, was Jimmy Page's earlier electric (his 1959 Dragon model) and is tied to Steve Howe of Yes. Both stay common in stoner, desert and psychedelic bands for their bright, cutting tone.</p>
     <p>Offset-waist Fenders turn up in the reverb-soaked end of the family. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Jaguar">Fender Jaguar</a></strong> (1962), a short-scale model with an elaborate switching system, found its first audience in surf music and later with punk, alternative and shoegaze players including Kurt Cobain. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Jazzmaster">Fender Jazzmaster</a></strong> (1958), designed for jazz but adopted by surf guitarists, shares that floating-tremolo character, which suits the drones and washes of psychedelic and space rock.</p>
     <p>Gibson's futuristic 1958 designs also matter. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gibson_Flying_V">Gibson Flying V</a></strong>, of which fewer than 100 were made in the original 1958 to 1959 run, was taken up by Albert King and Lonnie Mack before becoming a hard rock and heavy metal signature used by Michael Schenker, K. K. Downing, Paul Stanley, James Hetfield and Dave Mustaine; Dave Catching of Eagles of Death Metal carries it into the desert rock scene. Its sibling the <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gibson_Explorer">Gibson Explorer</a></strong> likewise became popular among hard rock and heavy metal guitarists of the 1970s and 1980s.</p>
     <p>Beyond the solid-bodies, <strong><a class="ext" href="https://en.wikipedia.org/wiki/Rickenbacker">Rickenbacker</a></strong> and <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gretsch">Gretsch</a></strong> supply jangle and twang. Rickenbacker, the first known maker of electric guitars, built the twelve-string electric that Roger McGuinn of the Byrds used to give Eight Miles High its raga-like psychedelic ring. Gretsch, whose hollow-body and Jet models were built around the Filter'Tron humbucker from 1957, is associated with Chet Atkins, Duane Eddy, Eddie Cochran, Bo Diddley and George Harrison of the Beatles, and Malcolm Young of AC/DC used a Gretsch Jet Firebird for his hard-edged rhythm work.</p>
 
-    <h3>Basses</h3>
+    <h3 id="basses">Basses</h3>
     <p>The electric bass anchors the low end, and in this family it often carries the riff alongside the guitar. In <a class="ext" href="https://en.wikipedia.org/wiki/Doom_metal">doom metal</a> the guitar and bass frequently play the same riff in unison to build a bass-heavy wall of sound, and both players down-tune to very low notes with heavy distortion; <a class="ext" href="https://en.wikipedia.org/wiki/Stoner_rock">stoner rock</a> is likewise described as bass-heavy and groove-laden. Geezer Butler of Black Sabbath tuned down to match Iommi when his bandmate began doing so.</p>
     <p>Four basses do most of the work. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Precision_Bass">Fender Precision Bass</a></strong> (1951), the first commercially successful electric bass, uses a split-coil pickup and a deep, full-bodied tone, and is linked to Steve Harris of Iron Maiden, Roger Waters of Pink Floyd and session bassist James Jamerson. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Fender_Jazz_Bass">Fender Jazz Bass</a></strong>, Leo Fender's second bass, has an offset body and a brighter, more midrange-rich voice; Geddy Lee of Rush played it on Moving Pictures and used it almost exclusively from 1993, after which Fender built a Geddy Lee signature model. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Rickenbacker_4001">Rickenbacker 4001</a></strong> (made from 1961 to 1986) is a rock bass with a distinctive crested-wave headstock, played by Paul McCartney, Chris Squire of Yes, Geddy Lee (his main instrument from the 1970s to the early 1980s) and Lemmy, whose heavily overdriven, chordal style turned it into an overpowered, distorted rhythmic rumble; Rickenbacker has since made a signature model for Al Cisneros of Sleep and Om. The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Gibson_Thunderbird">Gibson Thunderbird</a></strong> was used by John Entwistle of the Who on Thunderbird IVs from 1971 to 1974.</p>
 
-    <h3>Drums and percussion</h3>
+    <h3 id="drums-and-percussion">Drums and percussion</h3>
     <p>A standard <strong><a class="ext" href="https://en.wikipedia.org/wiki/Drum_kit">drum kit</a></strong> contains a bass drum, snare drum, tom-toms, a hi-hat and cymbals, and it is the rhythmic engine of these genres. <a class="ext" href="https://en.wikipedia.org/wiki/Ludwig_Drums">Ludwig</a>, <a class="ext" href="https://en.wikipedia.org/wiki/Gretsch_Drums">Gretsch</a>, <a class="ext" href="https://en.wikipedia.org/wiki/Slingerland_Drum_Company">Slingerland</a>, <a class="ext" href="https://en.wikipedia.org/wiki/Tama_Drums">Tama</a> and <a class="ext" href="https://en.wikipedia.org/wiki/Pearl_Drums">Pearl</a> are among the makers most often seen. Ludwig, long associated with drum kits and hardware, was used by John Bonham, who was introduced to the brand by Carmine Appice and endorsed it for the rest of his career, along with Paiste cymbals and Remo drumheads. Slingerland, founded in 1912, is strongly tied to jazz drummers such as Gene Krupa and Buddy Rich, while Tama and Pearl are Japanese makers of kits and hardware.</p>
     <p>Playing style follows the music. Where faster metal chases speed with <a class="ext" href="https://en.wikipedia.org/wiki/Bass_drum">double bass drum</a> work, doom, sludge and stoner drummers tend to play heavy, slow and groove-led, leaning on the backbeat and cymbal wash rather than busy fills. Bill Ward drove Black Sabbath's early sound, and the <a class="ext" href="https://en.wikipedia.org/wiki/Palm_Desert_Scene">Palm Desert Scene</a> is noted for distinctive repetitive drum beats and sludgy, trance-like grooves. Percussion is usually minimal, though Bonham added congas, timpani and a gong to his setup, and a tambourine or cowbell turns up now and then.</p>
 
-    <h3>Keyboards, organs and synthesizers</h3>
+    <h3 id="keyboards-organs-and-synthesizers">Keyboards, organs and synthesizers</h3>
     <p>Keyboards are central to the psychedelic and progressive branches. <a class="ext" href="https://en.wikipedia.org/wiki/Psychedelic_rock">Psychedelic rock</a> is noted for a strong keyboard presence, especially electronic organs, harpsichords and the Mellotron, while <a class="ext" href="https://en.wikipedia.org/wiki/Space_rock">space rock</a> uses synthesizers and atmospheric textures alongside reverberation-laden guitars and minimal drumming.</p>
     <p>The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Hammond_organ">Hammond organ</a></strong>, first made in 1935, used drawbars and, until 1975, rotating tonewheels, and is usually heard through a <a class="ext" href="https://en.wikipedia.org/wiki/Leslie_speaker">Leslie speaker</a>, which rotates a baffle in front of the speaker and gives the sound its swirling, pulsing quality. The Hammond, especially the B-3, became a rock staple in the late 1960s and 1970s; Jon Lord of Deep Purple built his band's hard rock sound around the organ, helping shape early heavy metal, and Keith Emerson of Emerson, Lake &amp; Palmer was another leading player.</p>
     <p>The <strong><a class="ext" href="https://en.wikipedia.org/wiki/Mellotron">Mellotron</a></strong>, developed in Birmingham in 1963, plays recordings of instruments from lengths of magnetic tape, one per key. The Beatles used it on Strawberry Fields Forever, the Moody Blues used it heavily on Days of Future Passed, and in the 1970s it became a fixture of <a class="ext" href="https://en.wikipedia.org/wiki/Progressive_rock">progressive rock</a> with King Crimson, Yes and Genesis.</p>
@@ -195,11 +218,11 @@
     <h2 id="tunings">Tunings</h2>
     <p>Standard tuning on a six-string guitar runs E A D G B E from the lowest string to the highest, and it is the reference point every other tuning here is measured against. The guitar is a transposing instrument, so those letters name pitches an octave below where they are written. Heavy music rarely stays in standard for long. Lowering the strings adds weight and low-end push, and the reason players do it is usually one of two things: to fit a singer&rsquo;s vocal range, or simply to get a deeper, heavier sound.</p>
 
-    <h3>Down-tuning</h3>
+    <h3 id="down-tuning">Down-tuning</h3>
     <p>Down-tuning (also called detuning) means retuning one or more strings below their standard pitch, either across the whole instrument or on selected strings. It is not a single tuning but a direction, and it shows up across blues, rock, punk, and metal. The deeper the tuning, the looser each string becomes at the same gauge, which changes both feel and tone: bends get easier, the low end thickens, and the guitar can start to sound less like a guitar and more like a low, sustained rumble.</p>
     <p>Two forces drive the move away from standard. The practical one is the voice: dropping the whole guitar lets a singer reach notes that would otherwise sit too high, so the band keeps its heavy sound without pushing the vocalist out of range. The stylistic one is texture. Lower strings, played with distortion, produce denser overtones and a heavier fundamental, which is exactly the quality that stoner, doom, sludge, and much of modern metal chase. Once a band commits to a low tuning, the bass and the drums usually follow it down so the low end stays coherent rather than clashing.</p>
 
-    <h3>Standard-based lowered tunings</h3>
+    <h3 id="standard-based-lowered-tunings">Standard-based lowered tunings</h3>
     <p>These keep the shape of standard tuning, all the familiar chord and scale fingerings, but move every string down by the same interval. Because the relative spacing is untouched, players can simply shift the whole instrument and keep playing the shapes they already know.</p>
     <ul class="wiki-list">
     <li><strong>E standard</strong> is the default across most genres and the baseline for comparison.</li>
@@ -211,7 +234,7 @@
     <li><strong>A standard</strong>, three and a half steps down, is a deep tuning usually reached with a baritone guitar or very heavy strings, since standard-scale instruments struggle to keep pitch that low.</li>
     </ul>
 
-    <h3>Drop tunings</h3>
+    <h3 id="drop-tunings">Drop tunings</h3>
     <p>A drop tuning takes a standard-based tuning and lowers only the lowest string, usually by a whole step, so the bottom two strings land an octave apart. The result is one of the most useful tricks in heavy playing: the lowest two strings form a power chord when fretted with a single finger.</p>
     <p>In <strong>Drop D</strong> the low E drops to D and the strings read D A D G B E. Because D and A are an octave apart, pressing one finger across the bottom two strings sounds a D5 power chord, and moving that shape up the neck gives every power chord with one finger instead of two or three. That convenience is why drop tunings are so common in rock, punk, and metal, and why bands keep dropping the whole instrument further and stacking the same shape on top.</p>
     <ul class="wiki-list">
@@ -222,14 +245,14 @@
     <li><strong>Drop A</strong> is the same idea on a seven-string or a baritone, dropping the lowest string to A.</li>
     </ul>
 
-    <h3>Gear that follows the tuning</h3>
+    <h3 id="gear-that-follows-the-tuning">Gear that follows the tuning</h3>
     <p>Very low tunings are a hardware problem as much as a musical choice. Thick strings are needed to keep low notes from buzzing and going slack, so players step up their string gauges, heavier on the low strings and sometimes lighter on the high ones to keep the top strings from feeling stiff. Longer scale lengths help too: a longer string can reach the same low note at higher tension, so it stays in tune and keeps its definition.</p>
     <ul class="wiki-list">
     <li><strong>Baritone guitars</strong> use a longer scale than a standard guitar, roughly 27 to 30.5 inches against the usual 24.75 to 25.5, and are usually strung with heavy gauges. They are typically tuned a fourth, a fifth, or a major third below standard, and they became popular in heavy metal from the late 1980s onward.</li>
     <li><strong>Seven-string guitars</strong> add a low string below standard, most often a low B, giving B E A D G B E. The extra string is usually dropped to A for an even lower bottom, and the instrument was popularized in metal in the mid 1990s through bands such as Korn.</li>
     </ul>
 
-    <h3>Reference table</h3>
+    <h3 id="reference-table">Reference table</h3>
     <table class="wikitable">
     <thead>
     <tr><th>Tuning</th><th>Notes (low to high)</th><th>Common in / notable users</th></tr>
@@ -253,34 +276,34 @@
     <p>A standard guitar has a scale length of about 24.75&ndash;25.5 inches, while a baritone stretches that to roughly 27&ndash;30.5 inches. The longer string reaches the same low note at higher tension, so deep tunings hold their pitch and keep their definition instead of flopping and buzzing.</p>
     </div>
 
-    <h3>Examples in the wild</h3>
+    <h3 id="examples-in-the-wild">Examples in the wild</h3>
     <p>The clearest early case is Black Sabbath. Tony Iommi tuned down a step and a half, to what we would now call C# standard, on several tracks from <em>Master of Reality</em>, partly to ease the tension on strings he was already fighting with an injured hand, and partly for a bigger, heavier sound; Geezer Butler dropped his bass to match. That album is widely treated as a foundation stone of stoner rock and sludge metal, and the tuning is one of the reasons why.</p>
     <p>By the 1990s the low end had become the point. Kyuss built riffs around down-tuned guitars, and Josh Homme ran a guitar through a bass cabinet for maximum low-end intensity; the band is routinely described by its sludgy, down-tuned sound. Sleep took the same instinct slower and heavier, with songs built on a low, distorted bedrock of guitar and bass. Electric Wizard leaned into C standard and, on later records, tunings a step lower still, helping define the doom sound. Together these bands show how a tuning choice is not just a technical setting but part of a genre&rsquo;s whole identity.</p>
 
     <h2 id="amplifiers">Amplifiers</h2>
-    <h3>What a guitar amplifier does</h3>
+    <h3 id="what-a-guitar-amplifier-does">What a guitar amplifier does</h3>
     <p>A guitar amplifier is an <a class="ext" href="https://en.wikipedia.org/wiki/Instrument_amplifier">instrument amplifier</a> that takes the weak signal from an electric guitar's pickups and makes it loud enough to drive one or more <a class="ext" href="https://en.wikipedia.org/wiki/Loudspeaker">loudspeakers</a>. Its circuit divides into a <a class="ext" href="https://en.wikipedia.org/wiki/Preamplifier">preamplifier</a>, which provides the first stage of gain and carries the tone controls, and an <a class="ext" href="https://en.wikipedia.org/wiki/Audio_power_amplifier">audio power amplifier</a>, which lifts the signal to playing level. When the electronics and the speakers share one cabinet the unit is a <strong>combo</strong>; when the electronics sit in their own box and need a separate speaker cabinet, the unit is a <strong>head</strong>. Heads dominate heavy music because one amplifier can be matched to a 4x12, or several heads and cabinets can be run together.</p>
     <p>Most guitar amplifiers still use <a class="ext" href="https://en.wikipedia.org/wiki/Vacuum_tube">vacuum tubes</a> (valves), and tube designs remain the standard in heavy music. A tube power amp does not stay clean up to its rated power: as it is pushed it compresses and distorts gradually, producing the harmonics, sag and sustain players describe as warmth. <a class="ext" href="https://en.wikipedia.org/wiki/Valve_amplifier">Valve amplifiers</a> often sound louder than their wattage suggests, and a low-powered tube amp can be driven into distortion at a volume at which a solid-state amp of the same rating would still play clean. <a class="ext" href="https://en.wikipedia.org/wiki/Solid-state_electronics">Solid-state</a> designs stay cleaner and lighter and clip more abruptly, which is why many players use them as clean pedal platforms rather than as their main source of distortion.</p>
     <p>There are three common routes to a distorted tone. A vintage non-master amp such as a Marshall Super Lead is simply turned up until its power tubes overload, which is loud but simple. A master-volume amp lets a player overdrive the preamp and then reduce the final output, which is how most 1970s and 1980s rock amps work. The third route feeds a clean, high-<a class="ext" href="https://en.wikipedia.org/wiki/Headroom_(audio_signal_processing)">headroom</a> amp from an external <a class="ext" href="https://en.wikipedia.org/wiki/Distortion_(music)">distortion</a> or fuzz <a class="ext" href="https://en.wikipedia.org/wiki/Effects_unit">pedal</a>. Because these genres often want a heavy, low-tuned signal that a small amp cannot reproduce cleanly at volume, many stoner, doom and desert players treat the amplifier mainly as a loud, clean, pedal-friendly platform; solid-state clean amps such as the <a class="ext" href="https://en.wikipedia.org/wiki/Roland_Jazz_Chorus">Roland JC-120</a> were adopted for exactly that role.</p>
 
-    <h3>British amplifiers</h3>
+    <h3 id="british-amplifiers">British amplifiers</h3>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Marshall_Amplification">Marshall</a> was founded in London in 1962 by the drum-shop owner Jim Marshall, who began building amplifiers to undercut imported Fender amps. Its first model, the 1963 <a class="ext" href="https://en.wikipedia.org/wiki/Marshall_JTM45">JTM45</a>, was closely based on the <a class="ext" href="https://en.wikipedia.org/wiki/Fender_Bassman">Fender Bassman</a> circuit but used British parts, higher-gain preamp valves and a closed-back 4x12 cabinet of <a class="ext" href="https://en.wikipedia.org/wiki/Celestion">Celestion</a> speakers instead of the Bassman's open-backed four 10-inch arrangement. Guitarists including Pete Townshend of the Who demanded more volume, and Marshall answered with the 100-watt <a class="ext" href="https://en.wikipedia.org/wiki/Marshall_Super_Lead">1959 Super Lead</a> of the mid-1960s, the amp most associated with the "Plexi" name taken from its Plexiglas control panel. The Super Lead had no master volume, so its famous crunch came only when its quartet of EL34 power tubes was pushed near maximum, usually through a stack of two 4x12 cabinets.</p>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Marshall_JCM800">JCM800</a> of 1981, and the master-volume JMP 2203 of 1975 behind it, made that overdriven sound available at more practical levels and became fixtures of hard rock and metal. Marshall later added channel switching and diode clipping to the split-channel JCM800s, and the combination of a humbucker, a Marshall head and a 4x12 remains the reference point for heavy guitar tone.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Orange_Amps">Orange</a> grew out of the same London scene and shares a family history with <a class="ext" href="https://en.wikipedia.org/wiki/Matamp">Matamp</a>. Orange was founded in 1968 by Cliff Cooper, who had his first amplifiers built in Huddersfield by Mat Mathias's Radio Craft, so the early amps even carried both names as Orange Matamp. The graphic-panel "Pics Only" heads of the early 1970s, and the 120-watt graphic models remembered as the OR120, established Orange's thick, overdriven voice. After a quiet 1980s the brand returned with the AD30 in 1998 and then the Rockerverb series in 2003, which became a favourite among metal guitarists, while the tiny 15-watt Tiny Terror of 2006 helped start the "lunchbox" head trend. Matamp carried on building handwired heads of its own and worked with players such as Peter Green of Fleetwood Mac.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Hiwatt">Hiwatt</a>, founded by Dave Reeves in 1968, took the opposite approach, chasing power and clean headroom rather than distortion. Reeves had built amps under the <strong>Sound City</strong> name for Ivor Arbiter, and Townshend, John Entwistle and Jimi Hendrix used those before Reeves's own <strong>DR103 Custom 100</strong> became the company's best-known model. Hiwatts were built to military specification and prized for a big, punchy, hi-fi clean tone, which made them natural fits for bassists and for players who wanted a strong pedal platform; David Gilmour and Keith Richards were among their users. Reeves also built the 200-watt DR201 and 400-watt DR405 for bass. <a class="ext" href="https://en.wikipedia.org/wiki/Laney_Amplification">Laney</a> was founded in the Digbeth area of Birmingham in 1967 by Lyndon Laney. Its amplifiers supplied Tony Iommi's early Black Sabbath tone, and the brand's later AOR series, built with an extra gain stage, became a recognised part of the stoner rock and doom metal palette. <a class="ext" href="https://en.wikipedia.org/wiki/Vox_AC30">Vox</a>'s AC30, a 2x12 combo powered by four EL84 valves, is only loosely part of this heavier lineage, but its midrange bite and easy breakup made it a studio staple and a reference clean tone alongside Fender.</p>
 
-    <h3>American amplifiers</h3>
+    <h3 id="american-amplifiers">American amplifiers</h3>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Fender_amplifier">Fender</a> set the template for the American clean sound. The 1952 <a class="ext" href="https://en.wikipedia.org/wiki/Fender_Bassman">Bassman</a> was the first amplifier built specifically for the electric bass, and its 1957 5F6-A version, a 4x10 combo with a long-tailed-pair phase inverter that improved clean headroom, became one of the most copied circuits in amplification: Marshall based the JTM45 on it. Fender's <a class="ext" href="https://en.wikipedia.org/wiki/Fender_Twin">Twin Reverb</a>, a 2x12 combo introduced as the Twin in 1952 and given reverb in 1963, became the standard loud, clean guitar amp, while the smaller <a class="ext" href="https://en.wikipedia.org/wiki/Fender_Deluxe">Deluxe</a> broke up early and provided an overdriven texture that predated the heavy genres.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Ampeg">Ampeg</a> supplied the other half of the classic rock backline. Its 1969 <a class="ext" href="https://en.wikipedia.org/wiki/Ampeg_SVT">SVT</a>, a 300-watt, fourteen-tube bass head developed quickly for the Rolling Stones and paired with sealed 8x10 cabinets, was many times more powerful than most bass amps of the day and is still treated as a reference bass rig. The same design team produced the <strong>V series</strong> guitar heads, including the V-4, used by Ron Wood and Keith Richards.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Sunn">Sunn</a> was formed by the Sundholm brothers after the Kingsmen's touring bass problems, and its early tube amps were built around hi-fi-derived circuits; the later Model T became a loud, clean favourite that helped define doom and drone metal. The band <a class="ext" href="https://en.wikipedia.org/wiki/Sunn_O)))">Sunn O)))</a> took its name from the brand and its logo.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Mesa/Boogie">Mesa/Boogie</a> began as Randall Smith's amplifier repair shop, where he modified Fender combos into louder, higher-gain amps. His cascading preamp designs produced the industry's first true high-gain amplifier around 1972 and grew into the <a class="ext" href="https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_Series">Mark series</a>; the Mark IIC+ became a landmark of 1980s metal tone. In 1991 the company introduced the <a class="ext" href="https://en.wikipedia.org/wiki/Mesa/Boogie_Rectifier">Dual Rectifier</a>, a bass-heavy, aggressive head that defined much of 1990s and 2000s metal.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Soldano_Custom_Amplification">Soldano</a> released the <a class="ext" href="https://en.wikipedia.org/wiki/Soldano_SLO-100">SLO-100</a> in 1987, an amp whose gain comes mostly from its preamp and so makes heavy distortion available at any volume. It inspired the <a class="ext" href="https://en.wikipedia.org/wiki/Peavey_5150">Peavey 5150</a>, the 1992 signature head Peavey built with Eddie Van Halen, which became one of the most recorded metal amps of its era and is often tightened with an overdrive pedal in front.</p>
 
-    <h3>Cabinets and speakers</h3>
+    <h3 id="cabinets-and-speakers">Cabinets and speakers</h3>
     <p>Speakers and cabinets shape the sound as much as the amp. A <a class="ext" href="https://en.wikipedia.org/wiki/Guitar_speaker">guitar speaker</a> is deliberately coloured, unlike a hi-fi driver, and its breakup is part of the tone. The most common formats are the 1x12 and 2x12 combo and the <strong>4x12</strong> cabinet of four 12-inch speakers, arranged as a square and offered in angled and straight versions, while bass rigs use larger cabinets such as 4x10, 1x15 and 8x10 designs. Cabinets may be <strong>open back</strong>, which lets the speaker breathe and fills a room, or <strong>closed back</strong>, which tightens and focuses the low end and projects further, the choice typical of heavy rock. Impedance matters as well: two 8-ohm speakers wired in parallel present a 4-ohm load, and players who chain cabinets must stay within the amplifier's minimum impedance.</p>
     <p><a class="ext" href="https://en.wikipedia.org/wiki/Celestion">Celestion</a> is the best-known maker of guitar speakers. Its Blue Alnico driver, developed for Vox in 1960, is described by the company as the world's first dedicated guitar loudspeaker and gives the AC30 much of its voice; other classics include the low-power ceramic design known as the Greenback and the higher-power Vintage 30, a common fitment in modern high-gain cabinets. Jensen, Eminence, Electro-Voice and JBL also appear in Fender and aftermarket rigs.</p>
 
-    <h3>The loudness and headroom arms race</h3>
+    <h3 id="the-loudness-and-headroom-arms-race">The loudness and headroom arms race</h3>
     <p>Heavy amplification has always been a volume contest. When Pete Townshend and John Entwistle of the Who asked for rigs louder than the ones they had lost, Marshall doubled the cabinets and then split them into stacked 4x12s, giving rise to the Marshall stack; by the late 1960s Jimi Hendrix was linking four stacks together, and by the early 1970s some bands toured behind an entire wall of full stacks. The same instinct drives doom, stoner and drone bands to run more and more rig, keeping it clean and loud rather than relying only on preamp distortion.</p>
     <p>Two practical consequences stand out. First, headroom: because these styles tune down, often to <a class="ext" href="https://en.wikipedia.org/wiki/Drop_D_tuning">drop D</a> and lower, and layer fuzz and boost pedals, players want a big, loud clean platform that will not turn to mush. Second, multiple amps and bass rigs: guitarists often run two or more heads and cabinets at once, sometimes splitting high and low content, while bassists use high-powered heads such as the Ampeg SVT with large cabinet stacks. Bi-amplification, which sends lows to a big woofer and highs to a horn through separate power amps, is one way bassists keep an overdriven low end while protecting the treble driver. The drone band Sunn O))) is known for extremely loud live performances and tunings as low as drop A.</p>
 
@@ -316,7 +339,7 @@
     <h2 id="pedals">Effects Pedals</h2>
     <p>Effects pedals are the most portable way to shape a heavy tone, and in stoner, doom, sludge, desert and the neighbouring genres they often carry as much of the sound as the amplifier does. The same handful of <a class="ext" href="https://en.wikipedia.org/wiki/Distortion_(music)">distortion</a> circuits from the 1960s and 1970s keep reappearing, usually modified, reissued or stacked several deep on one board.</p>
 
-    <h3>Fuzz</h3>
+    <h3 id="fuzz">Fuzz</h3>
     <p>Fuzz is the founding effect of heavy music, and it arrived almost by accident. In 1961 a faulty preamplifier distorted Grady Martin's guitar on Marty Robbins' "Don't Worry", and the sound prompted two studio engineers, Glenn Snoddy and Revis V. Hobbs, to build a stand-alone device that would create the effect on purpose. Their circuit was sold to Gibson and released in 1962 as the <a class="ext" href="https://en.wikipedia.org/wiki/Maestro_FZ-1_Fuzz-Tone">Maestro FZ-1 Fuzz-Tone</a>, the first widely marketed fuzz pedal. It was a slow seller until Keith Richards used one for the main riff of the Rolling Stones' 1965 single "(I Can't Get No) Satisfaction", after which demand cleared every FZ-1 in stock by the end of that year. The FZ-1 used three germanium transistors and became the template most early fuzzes followed.</p>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Fuzz_Face">Dallas Arbiter Fuzz Face</a>, designed by Ivor Arbiter in 1966, was a stripped-down FZ-1 aimed at the budget market: two transistors, two controls and a round case that gave it its name. Jimi Hendrix became its most famous user. Early Fuzz Faces used germanium transistors that clean up when the guitar's volume knob is rolled back, while later silicon versions were louder and harsher. The pedal is unusually sensitive to the guitar's pickups and to whatever sits before it in the chain, which is why fuzz pedals are so often placed first.</p>
     <p>The British answer to the FZ-1 was the <a class="ext" href="https://en.wikipedia.org/wiki/Tone_Bender">Tone Bender</a>, designed by Gary Hurst for Sola Sound in 1965 with a three-transistor circuit and more sustain than the Maestro. It went through many versions and was also sold by Vox, Marshall and Rotosound. Notable recordings include Jeff Beck's sitar-like solo on the Yardbirds' "Heart Full of Soul" (1965) and Jimmy Page's work on Led Zeppelin's debut album, while Mick Ronson used a Tone Bender on "Moonage Daydream".</p>
@@ -324,30 +347,30 @@
     <p>A different flavour is the octave fuzz. The <a class="ext" href="https://en.wikipedia.org/wiki/Univox_Super-Fuzz">Univox Super-Fuzz</a>, descended from a Shin-ei design, used full-wave rectification to add a note an octave above (and a hint of one below) plus a tone switch that scoops the mids for a fat, bassy sound. It has stayed popular in stoner and doom, with users including Josh Homme of Kyuss and Queens of the Stone Age and Jus Oborn of Electric Wizard.</p>
     <p>Among later designs, the <a class="ext" href="https://en.wikipedia.org/wiki/Z.Vex_Fuzz_Factory">Z.Vex Fuzz Factory</a> (1995) took a Fuzz Face-style circuit and exposed its transistor biasing as controls, giving a fuzz that can be tuned from classic to gated, sputtering and self-oscillating. Its success helped establish the independent "boutique" pedal market.</p>
 
-    <h3>Overdrive and treble boosters</h3>
+    <h3 id="overdrive-and-treble-boosters">Overdrive and treble boosters</h3>
     <p>Before fuzz boxes were common on British stages, players used a <a class="ext" href="https://en.wikipedia.org/wiki/Treble_booster">treble booster</a> to push an already loud amplifier into distortion. The best known is the <a class="ext" href="https://en.wikipedia.org/wiki/Dallas_Rangemaster_Treble_Booster">Dallas Rangemaster</a>, made from 1965 and built around a single germanium transistor. It was designed to sit on top of the amplifier and restore the high end that dark British amps lost when driven hard, but by overdriving the amp's input it also added grit and sustain. Tony Iommi's Rangemaster, modified to boost the full range rather than just the treble, is often cited as a key to the early Black Sabbath lead tone, and the pedal is also associated with Brian May, Rory Gallagher, Marc Bolan and Billy Gibbons.</p>
     <p>Overdrive as a category began with the <a class="ext" href="https://en.wikipedia.org/wiki/List_of_distortion_pedals">Boss OD-1</a> of 1977, the first pedal marketed as an "overdrive"; it used asymmetrical soft clipping to imitate a pushed tube amp. Boss followed it with the <a class="ext" href="https://en.wikipedia.org/wiki/Boss_SD-1">SD-1 Super Overdrive</a> in 1981, adding a tone control and a slightly more aggressive voicing. Guitarists quickly adopted it to boost already-overdriven amps such as the Marshall JCM800.</p>
     <p>The most imitated overdrive is the <a class="ext" href="https://en.wikipedia.org/wiki/Ibanez_Tube_Screamer">Ibanez Tube Screamer</a>, designed by Susumu Tamura and released in 1979. Symmetric diode clipping in the feedback loop of an op-amp gives soft, tube-like distortion, while its equalisation boosts midrange and trims bass so a guitar cuts through a mix. It is famous both as a standalone drive and as a boost in front of a high-gain amp, and Stevie Ray Vaughan was its most celebrated user.</p>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Klon_Centaur">Klon Centaur</a>, handmade by Bill Finnegan from 1994 to 2008, took the opposite approach: a boost meant to add gain and volume while leaving the underlying tone largely intact, with germanium diodes that colour the sound only near the top of its gain range. Its "transparent" character and limited supply pushed used prices far beyond the original.</p>
 
-    <h3>Distortion</h3>
+    <h3 id="distortion">Distortion</h3>
     <p>Distortion pedals clip harder than overdrives and are usually paired with a clean or lightly driven amp. The <a class="ext" href="https://en.wikipedia.org/wiki/Pro_Co_RAT">Pro Co RAT</a>, released in 1979, was one of the first mass-produced distortion pedals. An op-amp pushes the signal into silicon clipping diodes, and a single "Filter" control rolls off the highs; depending on its gain setting the pedal ranges from a tight boost to a fuzzy roar. Its aggressive, midrange-forward tone is a staple of grunge, alternative and stoner rock.</p>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Boss_DS-1">Boss DS-1</a> (1978) likewise uses hard clipping and became Boss's best-selling drive pedal, with Kurt Cobain's use of the DS-1 and DS-2 often cited. Much heavier is the <a class="ext" href="https://en.wikipedia.org/wiki/Boss_HM-2">Boss HM-2 Heavy Metal</a> (1983), whose two boost-and-cut "Color Mix" controls can be maxed to produce the mid-heavy "chainsaw" tone that defined Swedish death metal and bands such as Entombed. The <a class="ext" href="https://en.wikipedia.org/wiki/MXR_Distortion_%2B">MXR Distortion +</a> (1974) is a simpler, earlier design: one op-amp and two germanium diodes with no tone control, used by Randy Rhoads, Jerry Garcia and Dave Murray, and a common foundation for later fuzz and distortion circuits.</p>
 
-    <h3>Wah and filters</h3>
+    <h3 id="wah-and-filters">Wah and filters</h3>
     <p>The wah-wah pedal sweeps a band-pass filter to imitate the human voice, and it has been part of heavy playing since the late 1960s. The first production wah was the Vox Clyde McCoy, released in 1967, and its most enduring descendant is the <a class="ext" href="https://en.wikipedia.org/wiki/Dunlop_Cry_Baby">Dunlop Cry Baby</a>. Moving the treadle gives the classic rocking lead tone, while leaving it in one position creates a "cocked wah", a fixed midrange peak that colours riffs and rhythm parts.</p>
     <p>The <a class="ext" href="https://en.wikipedia.org/wiki/Morley_Pedals">Morley</a> wah took a different route, using electro-optical circuitry in which the treadle controls how much light reaches a photoresistor. With no potentiometer in the signal path there is nothing to wear out into a scratchy sound, and the design has remained in production in various forms since the 1960s.</p>
 
-    <h3>Modulation</h3>
+    <h3 id="modulation">Modulation</h3>
     <p>Phasers, flangers and choruses add movement and width, and they are used sparingly but effectively in these genres. The <a class="ext" href="https://en.wikipedia.org/wiki/MXR_Phase_90">MXR Phase 90</a> (1972) is a four-stage phaser whose single speed knob makes it one of the simplest and most recognisable modulation pedals; Eddie Van Halen and David Gilmour are among its users. Electro-Harmonix's <a class="ext" href="https://en.wikipedia.org/wiki/Electro-Harmonix">Small Stone</a> is another four-stage phaser with a warmer, rounder voice, while the same company's <a class="ext" href="https://en.wikipedia.org/wiki/Electro-Harmonix">Electric Mistress</a>, first sold in 1976, was among the first flangers in pedal form.</p>
     <p>Chorus arrived as a pedal with the <a class="ext" href="https://en.wikipedia.org/wiki/Chorus_(audio_effect)">Boss CE-1</a> Chorus Ensemble in 1976, adapted from the Roland Jazz Chorus amplifier; the smaller CE-2 followed in 1978 and became a fixture of 1980s boards. A gentle chorus or flange thickens clean passages and intros without overwhelming the distortion.</p>
 
-    <h3>Delay and reverb</h3>
+    <h3 id="delay-and-reverb">Delay and reverb</h3>
     <p>Tape echo was the first widely used delay, and two machines dominate its history. The <a class="ext" href="https://en.wikipedia.org/wiki/Echoplex">Echoplex</a>, introduced in 1959 and designed by Mike Battle, used a moving record head to change delay time and became the standard of the 1960s and 1970s. The <a class="ext" href="https://en.wikipedia.org/wiki/Roland_Space_Echo">Roland RE-201 Space Echo</a> (1974) replaced the reel with a free-running tape loop, which reduced wear and noise, and added multiple playback heads plus a spring reverb.</p>
     <p>Analog delay followed with the bucket-brigade device. Electro-Harmonix's <a class="ext" href="https://en.wikipedia.org/wiki/Electro-Harmonix">Memory Man</a>, released in 1976, was an early example, and the Deluxe Memory Man added built-in chorus and vibrato. Digital delay, described in the <a class="ext" href="https://en.wikipedia.org/wiki/Delay_(audio_effect)">delay</a> article, arrived in pedal form with Boss's DD series, beginning with the DD-2 in 1984, which offered cleaner repeats and longer delay times.</p>
     <p>Reverb in these genres is usually the <a class="ext" href="https://en.wikipedia.org/wiki/Reverb_effect">spring reverb</a> built into a guitar amplifier, prized for the metallic "drip" that follows staccato notes, or the studio <a class="ext" href="https://en.wikipedia.org/wiki/Reverb_effect">plate reverb</a> introduced with the EMT 140 in the late 1950s. Long, droning reverb and delay are central to the atmosphere of doom and post-metal.</p>
 
-    <h3>Signal chain and practical notes</h3>
+    <h3 id="signal-chain-and-practical-notes">Signal chain and practical notes</h3>
     <p>A typical board runs from the guitar through the effects in a rough order, and the usual arrangement is:</p>
     <ol class="wiki-list"><li>Fuzz, wah or a tuner at the very front, where the guitar's pickups reach the pedals untouched.</li><li>Overdrive and distortion, usually ordered from lightest to heaviest.</li><li>Modulation such as chorus, flanger and phaser in the middle.</li><li>Delay and reverb last, so the echoes and tails stay clean.</li><li>A noise gate near the end to tame the hiss that stacked gain pedals can add.</li></ol>
     <p>The order matters, because a fuzz placed after a buffered pedal can lose the interaction with the guitar's pickups that gives it its character, and a delay placed before heavy distortion smears into noise rather than echoing clearly.</p>

@@ -7,7 +7,7 @@
    ============================================================ */
 
 /* ---------- Hominypedia sub-navigation (sticky under the top banner) ---------- */
-body.hp { --hp-nav-h: 44px; }
+body.hp { --hp-nav-h: 52px; }
 .hp-nav {
   position: sticky;
   top: var(--banner-h);
@@ -28,14 +28,32 @@ body.hp { --hp-nav-h: 44px; }
   padding: 8px clamp(18px, 4vw, 44px);
 }
 .hp-nav__brand {
-  margin-right: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 14px;
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  line-height: 1.05;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-2);
 }
+.hp-nav__brand::after {
+  content: "A Lightweight Wikipedia Fork";
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: none;
+  color: var(--text-dim);
+  opacity: 0.75;
+}
+.hp-nav__inner { min-height: var(--hp-nav-h); }
 .hp-nav a {
   font-family: var(--font-display);
   font-size: 0.86rem;
@@ -69,7 +87,11 @@ body.hp { --hp-nav-h: 44px; }
   display: block;
   flex: 0 0 220px;
   width: 220px;
-  max-height: calc(100vh - 120px);
+  /* Cap the rail to the space actually left below the sticky banner + sub-nav
+     (top offset + a little breathing room) so its own scrollbar can reach the
+     last entry instead of hiding it under the viewport until the page bottoms out. */
+  max-height: calc(100vh - var(--banner-h) - var(--hp-nav-h) - 32px);
+  overscroll-behavior: contain;
   overflow-y: auto;
   font-size: 0.82rem;
   scrollbar-width: thin;
@@ -206,10 +228,9 @@ body.hp { --hp-nav-h: 44px; }
 .hp .infobox-title {
   text-align: center;
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--accent-2);
   margin-bottom: 10px;
 }
@@ -310,10 +331,10 @@ body.hp { --hp-nav-h: 44px; }
 .hp .quote cite { display: block; margin-top: 6px; font-size: 0.78rem; font-style: normal; color: var(--text-dim); }
 
 /* ---------- Cards (family tree, genre grids) ---------- */
-.hp .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 12px 0 20px; }
+.hp .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin: 12px 0 20px; }
 .hp .card {
   position: relative;
-  padding: 16px 18px;
+  padding: 12px 14px;
   background: linear-gradient(180deg, var(--panel), rgba(20, 16, 9, 0.5));
   border: 1px solid var(--panel-line);
   border-top: 3px solid var(--accent);
@@ -322,9 +343,10 @@ body.hp { --hp-nav-h: 44px; }
 }
 .hp .card::before { content: none; }               /* drop the main-site glow overlay */
 .hp .card:hover { transform: translateY(-3px); border-top-color: var(--accent-2); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5); }
-.hp .card h4 { margin: 0 0 6px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--text); }
+.hp .card h4 { margin: 0 0 4px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; color: var(--text); }
 .hp .card h4 a { color: inherit; }
-.hp .card p { margin: 0; font-size: 0.84rem; color: var(--text-dim); min-height: 3.2em; }
+/* Reserve two lines for every card blurb so all covers line up in a row. */
+.hp .card p { margin: 0; font-size: 0.8rem; line-height: 1.45; color: var(--text-dim); min-height: 2.9em; }
 .hp .card .tag {
   display: inline-block;
   margin-top: 9px;
@@ -345,7 +367,7 @@ body.hp { --hp-nav-h: 44px; }
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   border: 1px solid var(--panel-line);
   border-radius: 10px;
   background: #0b0a08;
@@ -468,4 +490,111 @@ body.hp { --hp-nav-h: 44px; }
   .hp-nav, .hp .rail { display: none; }
   .hp .layout { display: block; padding: 0; }
   .hp .infobox { border: 1px solid #000; }
+}
+
+/* ============================================================
+   Wikipedia-derived genre articles
+   ------------------------------------------------------------
+   The genre pages now carry the text of their English Wikipedia
+   article, so conversion produces a little markup the skin does
+   not otherwise use. Everything below stays scoped to .hp.
+   ============================================================ */
+
+/* ---- Nested table of contents in the rail ---- */
+.hp .rail .rail-toc { margin: 0; padding: 0; list-style: none; }
+.hp .rail .rail-toc ol {
+  margin: 0;
+  padding: 0 0 0 12px;
+  border-left: 1px solid var(--panel-line);
+  list-style: none;
+}
+.hp .rail .rail-toc li { margin: 1px 0; }
+.hp .rail .rail-toc > li > a { color: var(--text); font-weight: 600; }
+.hp .rail .rail-toc ol a { padding: 3px 9px; font-size: 0.78rem; }
+/* Parent rows reuse the Bands rail's +/- control; subsections stay folded. */
+.hp .rail .rail-toc__parent > .rail-genre__row { margin: 1px 0; }
+.hp .rail .rail-toc__parent > .rail-genre__row > a { color: var(--text); font-weight: 600; }
+.hp .rail .rail-toc__sub { margin-top: 1px; }
+.hp .rail .rail-toc__sub[hidden] { display: none; }
+
+/* ---- Body elements carried over from the source article ---- */
+/* Sub-section headings need the banner offset too, or a rail jump lands with
+   the heading hidden behind the sticky banner + Hominypedia sub-nav. */
+.hp .article h2, .hp .article h3, .hp .article h4, .hp .article h5, .hp .article h6 {
+  scroll-margin-top: calc(var(--banner-h) + var(--hp-nav-h) + 20px);
+}
+.hp .article .hatnote {
+  margin: 0 0 14px;
+  padding-left: 1.5em;
+  font-style: italic;
+  color: var(--text-dim);
+}
+.hp .article ul, .hp .article ol { margin: 8px 0 18px; padding-left: 24px; }
+.hp .article li { margin: 5px 0; }
+.hp .article li::marker { color: var(--accent); }
+.hp .article dl { margin: 8px 0 18px; }
+.hp .article dt { font-weight: 600; color: var(--text); }
+.hp .article dd { margin: 0 0 8px 24px; color: var(--text-dim); }
+.hp .article blockquote {
+  margin: 16px 0;
+  padding: 8px 0 8px 18px;
+  border-left: 3px solid var(--accent-3);
+  color: var(--text-dim);
+}
+.hp .article .div-col, .hp .article .columns { columns: 2; column-gap: 34px; }
+.hp .article .plainlist { padding-left: 0; list-style: none; }
+.hp .article .plainlist li { margin: 2px 0; }
+.hp .article .table-scroll { overflow-x: auto; margin: 12px 0 20px; }
+.hp .article .table-scroll .wikitable { margin: 0; }
+.hp .article .wikitable caption {
+  padding: 0 0 8px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: left;
+}
+
+/* ---- Inline citations and the reference list ---- */
+.hp .article sup.reference { font-size: 0.72em; line-height: 1; }
+.hp .article sup.reference a { border-bottom: none; }
+.hp .article .cite-bracket { color: var(--text-dim); }
+.hp .article ol.reflist { padding-left: 26px; font-size: 0.84rem; }
+.hp .article ol.reflist li { margin: 7px 0; }
+.hp .article .reflist .reference-text,
+.hp .article .reference-accessdate { color: var(--text-dim); }
+
+/* Wikipedia emits {{cite news}} as <cite class="citation news cs1">. The bare
+   "news" class collides with the main site's News panel rule (styles.css .news),
+   which would box those citations, cap their height and hide the overflow.
+   Put the citation itself back to plain inline text. */
+.hp .article cite.news,
+.hp .article .citation.news {
+  position: static;
+  display: inline;
+  flex-direction: row;
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  mask-image: none;
+  -webkit-mask-image: none;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+
+/* ---- Text-only infobox ---- */
+.hp .infobox-table td { overflow-wrap: anywhere; }
+.hp .infobox-table th[colspan] {
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+@media (max-width: 980px) {
+  .hp .article .div-col, .hp .article .columns { columns: 1; }
 }
