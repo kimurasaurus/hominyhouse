@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Album reviews from Hominy House, rated out of ten hominy with notes on why." />
+  <title>Reviews | Hominy House</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Absolute top-of-document anchor: Home nav scrolls to the very top of the page. -->
+  <div id="page-top" class="page-top" aria-hidden="true"></div>
+
+<!-- ===== Top Banner ===== -->
+  <header class="banner" id="top">
+    <a class="brand" href="index.html" aria-label="Hominy House home">
+      <img class="brand__logo" src="images/logo.png" alt="Hominy House logo" />
+      <span class="brand__name">Hominy&nbsp;House</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+    <a class="nav__link" href="index.html"><span class="nav__hominy" aria-hidden="true"></span>Home</a>
+    <a class="nav__link" href="releases.html"><span class="nav__hominy" aria-hidden="true"></span>Release Radar &amp; News</a>
+    <a class="nav__link nav__link--active" href="reviews.html" aria-current="page"><span class="nav__hominy" aria-hidden="true"></span>Reviews</a>
+    <a class="nav__link" href="hominypedia.html"><span class="nav__hominy" aria-hidden="true"></span>Hominypedia</a>
+    <a class="nav__link" href="index.html#subscribe"><span class="nav__hominy" aria-hidden="true"></span>Join</a>
+  </nav>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+
+  <main>
+    <section class="section featured reveal" id="featured">
+      <div class="layout">
+        <div class="layout__main">
+
+      <div class="section__head section__head--recs">
+        <h2 class="section__title">Reviews</h2>
+        <div class="rec-jump" id="rec-jump">
+          <span class="rec-jump__label" id="rec-jump-label">Jump to a review</span>
+          <button class="rec-jump__trigger" id="rec-jump-trigger" type="button"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-labelledby="rec-jump-label rec-jump-value">
+            <span class="rec-jump__value" id="rec-jump-value">Select a review&hellip;</span>
+          </button>
+          <ul class="rec-jump__menu" id="rec-jump-menu" role="listbox" aria-labelledby="rec-jump-label">
+            <li class="rec-jump__option" role="option" tabindex="-1" aria-selected="false" data-target="rec-lazy">
+              <span class="rec-jump__line1">
+                <span class="rec-jump__date">10-14-2026</span>
+                <span class="rec-jump__album">Lazy</span>
+              </span>
+              <span class="rec-jump__artist">Elvis Deluxe</span>
+            </li>
+            <li class="rec-jump__option" role="option" tabindex="-1" aria-selected="false" data-target="rec-valley">
+              <span class="rec-jump__line1">
+                <span class="rec-jump__date">10-09-2026</span>
+                <span class="rec-jump__album">Valley of the Snake</span>
+              </span>
+              <span class="rec-jump__artist">Ruby the Hatchet</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <article class="feature-card" id="rec-lazy">
+        <img class="feature-card__cover" src="images/ElvisDeluxe_Lazy.jpg" alt="Lazy album cover by Elvis Deluxe" />
+        <div class="feature-card__body">
+          <span class="tag tag--accent">Featured album</span>
+          <h3 class="feature-card__title">Lazy</h3>
+          <p class="feature-card__meta">Elvis Deluxe &nbsp;·&nbsp; 2007 &nbsp;·&nbsp; 10 tracks</p>
+          <p class="feature-card__date">Featured 10-14-2026</p>
+          <p class="feature-card__text">Placeholder summary.</p>
+          <div class="hominy-rating" aria-label="Rated 8 out of 10 hominy">
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy"></span>
+            <span class="hominy"></span>
+            <span class="hominy-rating__label">8 / 10 hominy</span>
+          </div>
+          <a class="feature-card__link" href="https://elvisdeluxe.bandcamp.com/album/lazy" target="_blank" rel="noopener">Download full album FREE on Soundcloud &rarr;</a>
+        </div>
+      </article>
+
+      <article class="feature-card" id="rec-valley">
+        <img class="feature-card__cover" src="images/FA1_ValleyoftheSnake_RubytheHatchet.jpg" alt="Valley of the Snake album cover by Ruby the Hatchet" />
+        <div class="feature-card__body">
+          <span class="tag tag--accent">Featured album</span>
+          <h3 class="feature-card__title">Valley of the Snake</h3>
+          <p class="feature-card__meta">Ruby the Hatchet &nbsp;·&nbsp; 2015 &nbsp;·&nbsp; 6 tracks</p>
+          <p class="feature-card__date">Featured 10-09-2026</p>
+          <p class="feature-card__text">
+            Hailing from Philadelphia or more classically known as Tranq Town, Ruby the
+            Hatchet's second album shows the sophomore slump just isn't real. Jillian
+            Taylor's vocals very reminiscent of the great Lori S from acclaimed Acid
+            King. If doom metal was the left leg and hard rock was the right, Ruby the
+            Hatchet puts them in a 3 second spladle and they don't get back up. If you
+            want a taste of some more upbeat doom with heavy fuzz and filthy
+            keyboard/guitar riffs I would highly suggest checking out track #2 Vast Acid.
+          </p>
+          <div class="hominy-rating" aria-label="Rated 7.5 out of 10 hominy">
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--on"></span>
+            <span class="hominy hominy--half"></span>
+            <span class="hominy"></span>
+            <span class="hominy"></span>
+            <span class="hominy-rating__label">7.5 / 10 hominy</span>
+          </div>
+          <a class="feature-card__link" href="https://www.youtube.com/watch?v=v0Y76f50sOs" target="_blank" rel="noopener">Full album on Youtube &rarr;</a>
+        </div>
+      </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <img class="footer__logo" src="images/logo.png" alt="" />
+      <span>Hominy&nbsp;House</span>
+    </div>
+    <p class="footer__copy">© Hominy House 2026</p>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="reviews.html">Reviews</a>
+      <a href="releases.html">Release Radar &amp; News</a>
+      <a href="hominypedia.html">Hominypedia</a>
+      <a href="index.html#subscribe">Join</a>
+    </nav>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
